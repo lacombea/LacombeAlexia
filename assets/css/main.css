@@ -100,6 +100,20 @@ right: 0;
 margin: auto;
 }
 
+.logo {
+	width: calc(11% - 2em) !important;
+	margin-top: 0em !important;
+}
+
+.frameLogo {
+	height: 150px; /*can be anything*/
+	width: 100%; /*can be anything*/
+	display: inline-block;
+	vertical-align: top; /*not required*/
+	position: relative;
+	margin-bottom: 20px;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2836,7 +2850,7 @@ margin: auto;
 		-ms-justify-content: center;
 		justify-content: center;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0 0 0.5em -2em;
 		padding: 0;
 		list-style: none;
 	}

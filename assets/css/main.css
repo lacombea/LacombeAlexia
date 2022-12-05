@@ -106,7 +106,7 @@ margin: auto;
 }
 
 .frameLogo {
-	height: 150px; /*can be anything*/
+	height: 100px; /*can be anything*/
 	width: 100%; /*can be anything*/
 	display: inline-block;
 	vertical-align: top; /*not required*/

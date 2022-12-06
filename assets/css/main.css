@@ -87,6 +87,20 @@ input, select, textarea {
 	margin-bottom: 20px;
 }
 
+.frameBig {
+	height: 400px; /*can be anything*/
+	width: 100%; /*can be anything*/
+	display: inline-block;
+	vertical-align: top; /*not required*/
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.liBig {
+	width: calc(50% - 2em) !important;
+	margin-top: 0em !important;
+}
+
 .imgFrame {
 max-height: 100%;
 max-width: 100%;
@@ -99,6 +113,7 @@ left: 0;
 right: 0;
 margin: auto;
 }
+
 
 .logo {
 	width: calc(11% - 2em) !important;

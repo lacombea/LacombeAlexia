@@ -48,27 +48,208 @@
 								<ul style="text-align: left;">
 									<li>Stage assistant ingénieur en Réalité Virtuelle</li>
 									<li>Mise en place d'une formation en réalité virtuelle pour des protocoles de traçabilité et d'hygiènes</li>
-									<li><b>Mots clés:</b> Réalité Virtuelle, Formation, Oculus</li>
-									<li><b>Date: </b>février à juin 2022</li>
-									<li><b>Entreprise: </b> e-ManRisk filiale du groupe E.Leclerc</li>
-									<li><b>Outils: </b>Unity, C#, Modelio, Postman, GitHub, VSCode</li>
+									<li><b>Mots clés :</b> Réalité Virtuelle, Formation, Oculus</li>
+									<li><b>Date : </b>février à juin 2022</li>
+									<li><b>Entreprise : </b> e-ManRisk filiale du groupe E.Leclerc</li>
+									<li><b>Outils principaux : </b>Unity, C#, Modelio, Postman, GitHub, VSCode</li>
 								</ul>
 							</section>
 							<section id="content" class="main">
 								<header class="major">
 									<h2>Résumé</h2>
 								</header>
-								<p>L’objectif de ce stage était la mise en place d‘un environnement de réalité virtuelle et/ou de réalité augmentée permettant la mise en œuvre des protocoles de traçabilité et d’hygiène.<br>
-									J'ai ainsi travaillé autour de 3 parties:
+								<p style="margin: 0 0 0.5em 0;">L’objectif de ce stage était la mise en place d‘un environnement de réalité virtuelle et/ou de réalité augmentée permettant la mise en œuvre des protocoles de traçabilité et d’hygiène.<br>
+									J'ai ainsi travaillé autour de 3 parties :
 								</p>
 								<ul>
 									<li>La modélisation d’un environnement de réalité virtuelle sur Unity, notamment sur la partie animation des objets mais aussi l'interaction entre les objets et le participant.</li>
 									<li>L’élaboration et la mise en place d’un scénario pour cette formation axé sur la procédure de cuisson, refroidissement rapide et stockage d’un aliment à l’aide de Mascaret, un système développé par le CERV.</li>
-									<li>L’intégration du logiciel développé par la société e-ManRisk au sein de l'environnement 3D et la possibilité d'interagir avec celui-ci à l’aide de la librairie node: Puppeteer.</li>
+									<li>L’intégration du logiciel développé par la société e-ManRisk au sein de l'environnement 3D et la possibilité d'interagir avec celui-ci à l’aide de la librairie node : Puppeteer.</li>
 								</ul>
 								<p>Pour ce projet, j'ai utilisé un oculus quest.</p>
 							</section>
-							<section id="content" class="main">s
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Phase de conception préliminaire</h2>
+								</header>
+								<p>
+									Une première partie du projet a été d'étudier les attentes et de discuter avec l'équipe métier de la société. 
+									Le protocole de traçabilité et d’hygiène qui serait mis en place pour cette formation avait été choisi au préalable. 
+									C'est une procédure de cuisson, refroidissement rapide et stockage d’un aliment qui est faite dans les laboratoire des magasins.
+									<br>
+									<br>
+									Il fallait donc décider avec l'équipe métier quel <b>type de formation</b> allait-on faire car cela influe sur l'aide apportée à l'apprenant et sur sa liberté à agir dans l'environnement 3D.
+									<br>
+									Le choix final a été de réaliser une <b>formation initiale</b> : les objets à utiliser seront mis en évidence et la procédure sera découpé en de nombreuses actions simples afin que l'apprenant puisse assimiler de manière plus efficace les procédures auxquelles on souhaite le former.
+								</p>
+								<span>
+										<img src="images/formationInitiale.png" alt="" style="max-height: 150px; max-width: 100%; width: auto;"/>
+										<figcaption style="text-align: center; font-style: italic;">Explication d’une prise de température dans une formation initiale</figcaption>
+								</span>
+								
+								<center>
+									<span>
+										<img src="images/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;"/>
+									</span>
+									<embed id="player" src="https://www.youtube.com/embed/qC7tNvQuzWw" width="600" height="300"  frameborder="0">
+									<p style="text-align: center; font-style: italic;">
+										Séquence de 3 actions avec mise en évidence des objets et indications
+									</p>
+								</center>
+								<p>
+									<br>
+									Par la suite, j'ai étudié différentes solutions pour l'implémentation de la formation dans la Réalité Virtuelle.
+									Ayant l'opportunité pour ce projet de travailler en collaboration avec le <b>CERV</b> (Centre Européen de Réalité Virtuelle) à Brest, j'ai pu utilisé le système qu'ils développent : <b>Mascaret</b>. 
+									C'est un système permettant de mettre en lien des diagrammes UML (notamment des diagrammes de classe et d’activité) et un environnement de réalité virtuelle modélisé sur un moteur de jeux 3D comme Unity, afin de réaliser des formations.
+								</p>
+							</section>
+							<section id="content" class="main">
+								<header class="major">
+									<h2>La gestion du temps</h2>
+								</header>
+								<p>
+									La procédure que l’apprenant est amené à réaliser au cours de cette formation peut être assez longue, il y a le temps de la cuisson mais aussi le temps du refroidissement qui peut durer jusqu’à <b>deux heures</b>.
+									Dans le cadre réel, un opérateur serait amené à réaliser d’autres procédures ou à la réaliser avec d’autres aliment pendant que l'aliment cuit ou refroidit, dans le cas d’une formation cela ne sert à rien de surcharger l’apprenant avec d’autres aliments ou plusieurs procédures, il fallait donc trouver un moyen de faire s'écouler le temps au sein de l'environnement virtuel sans que la cuisson ou le refroidissement ne paraissent immédiat. 
+									Deux solutions pour <b>spatialiser l’environnement dans le temps</b> ont donc été mises en place : l’utilisation d’horloge et l'utilisation d’écran noir.
+								</p>
+								<h3>Les horloges</h3>
+								<p>
+									Une horloge a été mise dans l'environnement afin d'indiquer l’heure à l’apprenant. 
+									Tout au long de la formation, <b>le temps passe à un rythme normal</b> et est affiché sur celle-ci. 
+									Une deuxième horloge est placée au-dessus du lave-main pour indiquer le temps que l’apprenant prend à se laver les mains et faire respecter le fait que cette étape doit durer plus de 30 secondes.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/horloge.png"></img>
+										</div>
+										<p style="text-align: center; font-style: italic;">
+											Horloge du laboratoire
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/horloge 2.png"></img>
+										</div>
+										<p style="text-align: center; font-style: italic;">
+											Horloge du lave-main
+										</p>
+									</li>
+								</ul>
+								<h3>Les écrans noirs</h3>
+								<p>
+									L’utilisation d’écran noir pour faire passer le temps est un procédé très utilisé que ce soit dans les jeux ou les dessins animées. J’ai décidé d’en utiliser lorsque le temps doit s’écouler d’un coup, par exemple lorsque l’apprenant met le poulet dans le four et que celui doit cuire, un écran noir avec le temps qui passe s’affiche pendant quelques secondes. 
+									Ce temps passe aussi sur l’horloge principale pour que cela reste <b>cohérent</b>.
+								</p>
+								<center>
+									<embed id="player" src="https://www.youtube.com/embed/lBnoURxy3wg " width="600" height="300"  frameborder="0">
+									<p style="text-align: center; font-style: italic;">
+										Ecran noir pour passer le temps de cuisson
+									</p>
+								</center>
+							</section>
+
+							<section id="content" class="main">
+								<header class="major">
+									<h2>La gestion de la contamination alimentaire</h2>
+								</header>
+								
+								<p>
+									Cette formation s'intéressant principalement à l’hygiène alimentaire et cette procédure ayant pour but de savoir si un aliment a été potentiellement contaminé par des bactéries, il est important que la contamination alimentaire soit au cœur de notre réalité virtuelle, on va donc la rendre visible pour que l’apprenant la perçoive mieux et le confronter au cas où l’aliment est contaminé ou non.
+								</p>
+								<h3>
+									Visualisation des bactéries
+								</h3>
+								<p>
+									Afin que l'apprenant comprenne mieux les dangers des bactéries, on va appliquer un <b>aspect différent à l’aliment quand il est contaminé</b> ainsi qu’aux mains lorsqu’elles sont sales.
+									Cette visualisation permet de rendre plus explicite la contamination alimentaire et est plus ludique et marquante que de simplement dire que les mains sont sales ou que l’aliment est contaminé.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/contamine.png"></img>
+										</div>
+										<p style="text-align: center; font-style: italic;">
+											Aliment non contaminé/contaminé
+										</p>
+									</li>
+								</ul>
+								<h3>
+									L’impact des bactéries dans la formation
+								</h3>
+								<p>
+									En réalité, les opérateurs ne savent pas si un aliment est contaminé ou non avant d'arriver à la fin de la procédure de refroidissement rapide, c’est pourquoi le choix a été fait de faire pareil dans cette formation : une valeur aléatoire est attribuée à l’aliment au lancement de la simulation afin de fixer s’il est contaminé ou non, et l’apprenant ne le saura que lorsque la procédure de refroidissement sera finie et qu’il devra stocké ou non l’aliment. <br><Br>
+									Mais la contamination alimentaire passe aussi par un mauvais respect des procédures, l’apprenant commence sa formation avec les mains sales comme cela serait le cas dans la vraie vie, ainsi s’il touche un aliment avant de s’être correctement lavé les mains ou si un aliment touche le sol celui ci va devenir contaminé, quelques secondes plus tard un écran disant au participant que l'aliment est contaminé et qu’il doit recommencer sera affiché.
+								</p>
+								<center>
+									<embed id="player" src="https://www.youtube.com/embed/CJZet4_laIg" width="600" height="300"  frameborder="0">
+									<p style="text-align: center; font-style: italic;">
+										Contamination au toucher de l'aliment
+									</p>
+								</center>
+							</section>
+
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Mise en place du logiciel d’e-ManRisk dans l’environnement virtuel</h2>
+								</header>
+								<p>
+									Le logiciel développé par e-ManRisk permet d’enregistrer le résultat des contrôles de qualité réalisés dans les laboratoires. 
+									Le logiciel est utilisé sur des <b>tablettes</b> car c’est ce qui est le plus pratique dans ce cadre. 
+									Un élément important de ce projet était donc de pouvoir faire de même dans la réalité virtuelle : avoir une tablette qui permettrait de prendre en main le logiciel et d’enregistrer le contrôle réalisé durant la formation.<br>
+									Unity ne propose pas de navigateur web intégrable au sein de l’environnement 3D, il n’y a pas d’outil gratuit permettant ceci et crée ce type d’outil aurait été un travail trop volumineux, il fallait trouver une autre solution pour avoir accès à l’application d’e-ManRisk. 
+									La solution sera d’utiliser la librairie Puppeteer.
+								</p>
+								<h3>La librairie Puppeteer</h3>
+								<p>
+									La librairie Puppeteer permet d'interagir avec un navigateur web Chrome, via un serveur Node, comme on le ferait sur un ordinateur de manière classique mais de manière automatisée.
+									On peut ainsi simuler des clics de la souris ou des appuis sur les touches du clavier mais également extraire des pdf ou faire des captures d’écran de page.<br>
+									C’est ainsi que l’on naviguera sur l’application web d’e-ManRisk : une capture d’écran de la page actuelle sera prise et affichée sur la table dans l'environnement virtuel, l’utilisateur devra être en mesure de cliquer sur le site et la page affichée devrait changer ou des éléments devraient apparaître. 
+									On souhaite également que les champs textuels puissent être remplis, il faudra donc pouvoir modéliser un <b>clavier</b> pour la tablette.
+								</p>
+								<h3>La tablette dans l'environnement 3D</h3>
+								<p>
+									Dans un souci de précision pour interagir avec la tablette, il y aura en fait deux tablettes dans le monde virtuel : une première sera disposée dans le laboratoire à taille réelle que l'utilisateur devra saisir pour être transféré devant une plus grande tablette avec laquelle il pourra interagir par un pointeur et sur laquelle sera affiché si besoin un clavier.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/tabletteLabo.png"></img>
+										</div>
+										<p style="text-align: center; font-style: italic;">
+											Tablette dans le laboratoire
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/tabletteInterractive.png"></img>
+										</div>
+										<p style="text-align: center; font-style: italic;">
+											Tablette interactive avec un pointeur 
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/tabletteClavier.png"></img>
+										</div>
+										<p style="text-align: center; font-style: italic;">
+											Affichage du clavier 
+										</p>
+									</li>
+								</ul>
+								<center>
+									<embed id="player" src="https://www.youtube.com/embed/SLaZbenbcuM " width="600" height="300"  frameborder="0">
+									<p style="text-align: center; font-style: italic;">
+										Transfert entre les tablettes
+									</p>
+									<embed id="player" src="https://www.youtube.com/embed/l4dAgofKtuk " width="600" height="300"  frameborder="0">
+									<p style="text-align: center; font-style: italic;">
+										Complétion d'un formulaire
+									</p>
+								</center>
+							</section>
+
+							<section id="content" class="main">
 								<header class="major">
 									<h2>Outils et langages utilisés</h2>
 								</header>

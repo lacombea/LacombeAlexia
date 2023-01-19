@@ -2939,6 +2939,10 @@ margin: auto;
 			margin-bottom: 0;
 		}
 
+	.logo div{
+		max-height: 100px;
+	}
+
 	@media screen and (max-width: 980px) {
 
 		.logo li {

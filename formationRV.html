@@ -84,24 +84,30 @@
 								</p>
 								<span>
 										<img src="images/formationInitiale.png" alt="" style="max-height: 150px; max-width: 100%; width: auto;"/>
-										<figcaption style="text-align: center; font-style: italic;">Explication d’une prise de température dans une formation initiale</figcaption>
+										<figcaption class = "legende">Explication d’une prise de température dans une formation initiale</figcaption>
 								</span>
 								
-								<center>
-									<span>
-										<img src="images/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;"/>
-									</span>
-									<embed id="player" src="https://www.youtube.com/embed/qC7tNvQuzWw" width="600" height="300"  frameborder="0">
-									<p style="text-align: center; font-style: italic;">
-										Séquence de 3 actions avec mise en évidence des objets et indications
-									</p>
-								</center>
+								
 								<p>
 									<br>
 									Par la suite, j'ai étudié différentes solutions pour l'implémentation de la formation dans la Réalité Virtuelle.
 									Ayant l'opportunité pour ce projet de travailler en collaboration avec le <b>CERV</b> (Centre Européen de Réalité Virtuelle) à Brest, j'ai pu utilisé le système qu'ils développent : <b>Mascaret</b>. 
 									C'est un système permettant de mettre en lien des diagrammes UML (notamment des diagrammes de classe et d’activité) et un environnement de réalité virtuelle modélisé sur un moteur de jeux 3D comme Unity, afin de réaliser des formations.
 								</p>
+								<center>
+									<span>
+										<img src="images/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;"/>
+										<figcaption class = "legende">Exemple d’une séquence d'action pour Mascaret</figcaption>
+									</span>
+									<div style="max-width: 600px">
+										<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/qC7tNvQuzWw" frameborder="0">
+										</div>
+										<p class = "legende">
+											Séquence de 3 actions avec mise en évidence des objets et indications
+										</p>
+									</div>									
+								</center>
 							</section>
 							<section id="content" class="main">
 								<header class="major">
@@ -123,7 +129,7 @@
 										<div class = "frame">
 											<img class = "imgFrame" src="images/horloge.png"></img>
 										</div>
-										<p style="text-align: center; font-style: italic;">
+										<p class = "legende">
 											Horloge du laboratoire
 										</p>
 									</li>
@@ -131,7 +137,7 @@
 										<div class="frame">
 											<img class = "imgFrame" src="images/horloge 2.png"></img>
 										</div>
-										<p style="text-align: center; font-style: italic;">
+										<p class = "legende">
 											Horloge du lave-main
 										</p>
 									</li>
@@ -142,10 +148,15 @@
 									Ce temps passe aussi sur l’horloge principale pour que cela reste <b>cohérent</b>.
 								</p>
 								<center>
-									<embed id="player" src="https://www.youtube.com/embed/lBnoURxy3wg " width="600" height="300"  frameborder="0">
-									<p style="text-align: center; font-style: italic;">
-										Ecran noir pour passer le temps de cuisson
-									</p>
+									<div style="max-width: 600px">
+										<div class='embed-container'>
+											<embed id="player" src="https://www.youtube.com/embed/lBnoURxy3wg " frameborder="0">
+										</div>
+										<p class = "legende">
+											Ecran noir pour passer le temps de cuisson
+										</p>
+									</div>
+									
 								</center>
 							</section>
 
@@ -169,7 +180,7 @@
 										<div class = "frame">
 											<img class = "imgFrame" src="images/contamine.png"></img>
 										</div>
-										<p style="text-align: center; font-style: italic;">
+										<p class = "legende">
 											Aliment non contaminé/contaminé
 										</p>
 									</li>
@@ -182,10 +193,15 @@
 									Mais la contamination alimentaire passe aussi par un mauvais respect des procédures, l’apprenant commence sa formation avec les mains sales comme cela serait le cas dans la vraie vie, ainsi s’il touche un aliment avant de s’être correctement lavé les mains ou si un aliment touche le sol celui ci va devenir contaminé, quelques secondes plus tard un écran disant au participant que l'aliment est contaminé et qu’il doit recommencer sera affiché.
 								</p>
 								<center>
-									<embed id="player" src="https://www.youtube.com/embed/CJZet4_laIg" width="600" height="300"  frameborder="0">
-									<p style="text-align: center; font-style: italic;">
-										Contamination au toucher de l'aliment
-									</p>
+									<div style="max-width: 600px">
+										<div class='embed-container'>
+											<embed id="player" src="https://www.youtube.com/embed/CJZet4_laIg" frameborder="0">
+										</div>
+										<p class = "legende">
+											Contamination au toucher de l'aliment
+										</p>
+									</div>
+									
 								</center>
 							</section>
 
@@ -209,14 +225,14 @@
 								</p>
 								<h3>La tablette dans l'environnement 3D</h3>
 								<p>
-									Dans un souci de précision pour interagir avec la tablette, il y aura en fait deux tablettes dans le monde virtuel : une première sera disposée dans le laboratoire à taille réelle que l'utilisateur devra saisir pour être transféré devant une plus grande tablette avec laquelle il pourra interagir par un pointeur et sur laquelle sera affiché si besoin un clavier.
+									Dans un souci de précision pour interagir avec la tablette, il y aura en fait deux tablettes dans le monde virtuel : une première sera disposée dans le laboratoire à <b>taille réelle</b> que l'utilisateur devra saisir pour être transféré devant une plus grande tablette avec laquelle il pourra <b>interagir par un pointeur</b> et sur laquelle sera affiché si besoin un clavier.
 								</p>
 								<ul class="features">
 									<li>
 										<div class = "frame">
 											<img class = "imgFrame" src="images/tabletteLabo.png"></img>
 										</div>
-										<p style="text-align: center; font-style: italic;">
+										<p class = "legende">
 											Tablette dans le laboratoire
 										</p>
 									</li>
@@ -224,7 +240,7 @@
 										<div class="frame">
 											<img class = "imgFrame" src="images/tabletteInterractive.png"></img>
 										</div>
-										<p style="text-align: center; font-style: italic;">
+										<p class = "legende">
 											Tablette interactive avec un pointeur 
 										</p>
 									</li>
@@ -232,20 +248,29 @@
 										<div class="frame">
 											<img class = "imgFrame" src="images/tabletteClavier.png"></img>
 										</div>
-										<p style="text-align: center; font-style: italic;">
+										<p class = "legende">
 											Affichage du clavier 
 										</p>
 									</li>
 								</ul>
 								<center>
-									<embed id="player" src="https://www.youtube.com/embed/SLaZbenbcuM " width="600" height="300"  frameborder="0">
-									<p style="text-align: center; font-style: italic;">
-										Transfert entre les tablettes
-									</p>
-									<embed id="player" src="https://www.youtube.com/embed/l4dAgofKtuk " width="600" height="300"  frameborder="0">
-									<p style="text-align: center; font-style: italic;">
-										Complétion d'un formulaire
-									</p>
+									<div style="max-width: 600px">
+										<div class='embed-container'>
+											<embed id="player" src="https://www.youtube.com/embed/SLaZbenbcuM" frameborder="0">
+										</div>
+											<p class = "legende">
+											Transfert entre les tablettes
+										</p>
+									</div>
+									<div style="max-width: 600px">
+										<div class='embed-container'>
+											<embed id="player" src="https://www.youtube.com/embed/l4dAgofKtuk" frameborder="0">
+										</div>
+										<p class = "legende">
+											Complétion d'un formulaire
+										</p>
+									</div>
+									
 								</center>
 							</section>
 
@@ -253,47 +278,48 @@
 								<header class="major">
 									<h2>Outils et langages utilisés</h2>
 								</header>
-								<ul class="features">
-									<li class="logo">
-										<div class = "frameLogo">
+								<ul class="logo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/unity.png"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/csharp.png"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/steamvr.jpg"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/Modelio.png"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/postman.png"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/typescript.png"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/github.png"></img>
 										</div>
 									</li>
-									<li class="logo">
-										<div class = "frameLogo">
+									<li>
+										<div class = "frame">
 											<img class = "imgFrame" src="images/vscode.png"></img>
 										</div>
 									</li>
+
 								</ul>
 							</section>
 

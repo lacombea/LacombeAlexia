@@ -84,7 +84,7 @@ input, select, textarea {
 	display: inline-block;
 	vertical-align: top; /*not required*/
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .frameBig {
@@ -115,19 +115,6 @@ margin: auto;
 }
 
 
-.logo {
-	width: calc(11% - 2em) !important;
-	margin-top: 0em !important;
-}
-
-.frameLogo {
-	height: 100px; /*can be anything*/
-	width: 100%; /*can be anything*/
-	display: inline-block;
-	vertical-align: top; /*not required*/
-	position: relative;
-	margin-bottom: 20px;
-}
 
 /* Basic */
 
@@ -2916,6 +2903,73 @@ margin: auto;
 
 		}
 
+/* Logo */
+
+	.logo {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	width: calc(100% + 2em);
+	margin: 0 0 0.5em -2em;
+	padding: 0;
+	list-style: none;
+	}
+
+	.logo li {
+		width: calc(11.1111% - 2em);
+		margin-left: 2em;
+		margin-top: 0em;
+		padding: 0;
+	}
+
+		.logo li:nth-child(1), .logo li:nth-child(2), .logo li:nth-child(3), .logo li:nth-child(4), .logo li:nth-child(5), .logo li:nth-child(6), .logo li:nth-child(7), .logo li:nth-child(8), .logo li:nth-child(9){
+			margin-top: 0;
+		}
+
+		.logo li > :last-child {
+			margin-bottom: 0;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		.logo li {
+			width: calc(50% - 2em);
+		}
+
+			.logo li:nth-child(3) {
+				margin-top: 3em;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.logo {
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+			.logo li {
+				width: 100%;
+				margin-left: 0;
+				margin-top: 2em;
+			}
+
+				.logo li:nth-child(2), .logo li:nth-child(3) {
+					margin-top: 2em;
+				}
+
+	}
+
 /* Statistics */
 
 	.statistics {
@@ -3840,3 +3894,32 @@ margin: auto;
 			}
 
 		}
+
+/* Embed */
+	.embed-container { 
+		left: 0; 
+		width: 100%; 
+		height: 0; 
+		position: relative; 
+		padding-bottom: 56.25%;
+	} 
+
+	
+	.embed-container iframe, .embed-container object, .embed-container embed { 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+		position: absolute; 
+		border: 0;
+	}
+
+/* Legende */
+	.legende {
+		text-align: center; 
+		font-style: italic;
+		margin: 0 0 0.5em 0;
+	}
+
+	
+	

@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>ChromaScore</h1>
+						<h1>Chroma Score</h1>
 					</header>
 
 				<!-- Nav -->
@@ -42,7 +42,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/ChromaScore.png" alt="" style="max-height: 150px;"/>
+										<img src="images/chromaScore/chargement.png" alt="" style="max-height: 150px;"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
@@ -51,7 +51,7 @@
 									<li><b>Theme : </b>"Everything is backwards"</li>
 									<li><b>Date : </b>janvier 2023 (3 jours)</li>
 									<li><b>Composition de l'équipe : </b>3 développeurs et 2 artistes</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 2D, Rythme</li>
+									<li><b>Mots clés : </b>Jeu vidéo, 2D, Arcade, Rythme</li>
 									<li><b>Outils : </b>Unity, C#, GitHub, FMOD, VSCode</li>
 								</ul>
 								
@@ -59,12 +59,108 @@
 							<section id="content" class="main">
 								<header class="major">
 									<h2>Jouer</h2>
-									<center>
-										<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/7208635/Test build/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="400px" width="640px"></iframe>
-									</center>
 								</header>
+								<center>
+									<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/7208635/Test build/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="400px" width="640px"></iframe>
+								</center>
+								<p>
+									Play with the ←↓→ arrows, or the ASD (qwerty) or QSD (azerty) keys.<br>
+									Left is cyan, Down is yellow, Right is magenta.
+								</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://eddiebreeg.itch.io/chromascore" class="button">Page itch.io</a></li>
+									</ul>
+								</footer>
 							</section>
-
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Mon rôle</h2>
+								</header>
+								<p>
+									Voici les principales taches dont je me suis occupé durant le projet :
+								</p>
+								<h3>Implémentation des menus et des paramètres</h3>
+								<p>
+									J'ai implenté la navigation entre les différents menus et scène de notre jeu et également implémeter les options. <br>
+									J'ai ainsi découvert <b>FMOD</b> et la manière de gérer le son de notre jeu en via son API.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/chromaScore/accueil.png"></img>
+										</div>
+										<p class = "legende">
+											Menu principal
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/chromaScore/options.png"></img>
+										</div>
+										<p class = "legende">
+											Menu d'options
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/chromaScore/pause.png"></img>
+										</div>
+										<p class = "legende">
+											Menu de pause
+										</p>
+									</li>
+								</ul>
+								<h3>Implémentation des sauvegardes</h3>
+								<p>
+									Pour ancrer notre jeu dans le style <b>Arcade</b>, nous voulions avoir la possibilité d'afficher un tableau des score. 
+									Le données que nous sauvegarderons seront donc pour chaque musique un tableau contenant les 10 meillleurs scores, conteant un nom, un nombre de point et un rank.<br>
+									De plus, nous sauvegarderons aussi les paramêtres de son pour que l'utilisateur les conserve entre plusieurs parties.<br>
+									Pour ce faire, j'ai mis en place un système de sauvegarde en utilisant un fichier json.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/chromaScore/data.png"></img>
+										</div>
+										<p class = "legende">
+											Data sauvegardés
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/chromaScore/score.png"></img>
+										</div>
+										<p class = "legende">
+											Class Score
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/chromaScore/scoreBoard.png"></img>
+										</div>
+										<p class = "legende">
+											Affichage des scores
+										</p>
+									</li>
+								</ul>
+								<h3>Build WebGL</h3>
+								<p>
+									Je me suis également occupé de créer le build WebGL du jeu. 
+									C'est à cette étape que nous avons décidé de rajouter un écran de chargement permettant à FMOD de s'initialiser avant de lancer le jeu. 
+									Sans cet écran, le son du jeu ne se lancait qu'en changeant de menu. 
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/chromaScore/chargement.png"></img>
+										</div>
+										<p class = "legende">
+											Ecran de chargement
+										</p>
+									</li>
+								</ul>
+							</section>
 							<section id="content" class="main">
 								<header class="major">
 									<h2>Outils et langages utilisés</h2>

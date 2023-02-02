@@ -4,6 +4,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function onClick(element) {
+	document.getElementById("img01").src = element.src;
+	document.getElementById("modal01").style.display = "block";
+  }
+
 (function($) {
 
 	var	$window = $(window),
@@ -121,8 +126,3 @@
 		});
 
 })(jQuery);
-
-function onClick(element) {
-	document.getElementById("img01").src = element.src;
-	document.getElementById("modal01").style.display = "block";
-  }

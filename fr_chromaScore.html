@@ -42,7 +42,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/chromaScore/chargement.png" alt="" style="max-height: 150px;"/>
+										<img src="images/chromaScore/chargement.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
@@ -79,6 +79,7 @@
 									<h2>Mon rôle</h2>
 								</header>
 								<p>
+									J'ai participé au développement et à la programmation de ce jeu.
 									Voici les principales taches dont je me suis occupé durant le projet :
 								</p>
 								<h3>Implémentation des menus et des paramètres</h3>
@@ -89,7 +90,7 @@
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/chromaScore/accueil.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/accueil.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Menu principal
@@ -97,7 +98,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/options.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/options.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Menu d'options
@@ -105,7 +106,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/pause.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/pause.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Menu de pause
@@ -122,7 +123,7 @@
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/chromaScore/data.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/data.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Data sauvegardés
@@ -130,7 +131,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/score.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/score.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Class Score
@@ -138,7 +139,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/scoreBoard.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/scoreBoard.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Affichage des scores
@@ -154,7 +155,7 @@
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/chromaScore/chargement.png"></img>
+											<img class = "imgFrame" src="images/chromaScore/chargement.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Écran de chargement
@@ -230,6 +231,12 @@
 					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 				</footer>
 
+			</div>
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="modal-content">
+					<img id="img01" style="max-width:100%">
+				</div>
 			</div>
 
 		<!-- Scripts -->

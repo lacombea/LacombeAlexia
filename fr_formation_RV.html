@@ -42,7 +42,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/logo/emanrisk.png" alt="" style="max-height: 150px;"/>
+										<img src="images/logo/emanrisk.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
@@ -86,7 +86,7 @@
 									Le choix final a été de réaliser une <b>formation initiale</b> : les objets à utiliser seront mis en évidence et la procédure sera découpé en de nombreuses actions simples afin que l'apprenant puisse assimiler de manière plus efficace les procédures auxquelles on souhaite le former.
 								</p>
 								<span>
-										<img src="images/eManRisk/formationInitiale.png" alt="" style="max-height: 150px; max-width: 100%; width: auto;"/>
+										<img src="images/eManRisk/formationInitiale.png" alt="" style="max-height: 150px; max-width: 100%; width: auto; cursor:pointer" onclick="onClick(this)"/>
 										<figcaption class = "legende">Explication d’une prise de température dans une formation initiale</figcaption>
 								</span>
 								<p>
@@ -97,7 +97,7 @@
 								</p>
 								<center>
 									<span>
-										<img src="images/eManRisk/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;"/>
+										<img src="images/eManRisk/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto; cursor:pointer" onclick="onClick(this)"/>
 										<figcaption class = "legende">Exemple d’une séquence d'action pour Mascaret</figcaption>
 									</span>
 									<div style="max-width: 600px">
@@ -127,7 +127,7 @@
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/eManRisk/horloge.png"></img>
+											<img class = "imgFrame" src="images/eManRisk/horloge.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Horloge du laboratoire
@@ -135,7 +135,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/eManRisk/horloge 2.png"></img>
+											<img class = "imgFrame" src="images/eManRisk/horloge 2.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Horloge du lave-main
@@ -178,7 +178,7 @@
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/eManRisk/contamine.png"></img>
+											<img class = "imgFrame" src="images/eManRisk/contamine.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Aliment non contaminé/contaminé
@@ -231,7 +231,7 @@
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/eManRisk/tabletteLabo.png"></img>
+											<img class = "imgFrame" src="images/eManRisk/tabletteLabo.png"  style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Tablette dans le laboratoire
@@ -239,7 +239,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/eManRisk/tabletteInterractive.png"></img>
+											<img class = "imgFrame" src="images/eManRisk/tabletteInterractive.png"  style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Tablette interactive avec un pointeur 
@@ -247,7 +247,7 @@
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/eManRisk/tabletteClavier.png"></img>
+											<img class = "imgFrame" src="images/eManRisk/tabletteClavier.png"  style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
 											Affichage du clavier 
@@ -356,6 +356,12 @@
 						<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
+			</div>
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="modal-content">
+					<img id="img01" style="max-width:100%">
+				</div>
 			</div>
 
 		<!-- Scripts -->

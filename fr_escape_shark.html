@@ -42,7 +42,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/logo/escape_shark.png" alt="" style="max-height: 150px;"/>
+										<img src="images/logo/escape_shark.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
@@ -73,7 +73,7 @@
 								</p>
 								<center>
 									<span>
-										<img src="images/enigme.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;"/>
+										<img src="images/enigme.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;cursor:pointer" onclick="onClick(this)"/>
 										<figcaption class = "legende">UI d'une énigme</figcaption>
 									</span>
 								</center>
@@ -82,7 +82,7 @@
 								</p>
 								<center>
 									<span>
-										<img src="images/info.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;"/>
+										<img src="images/info.png" alt="" style="max-height: 500px; max-width: 100%; width: auto;cursor:pointer" onclick="onClick(this)"/>
 										<figcaption class = "legende">UI de l'information complémentaire après une énigme</figcaption>
 									</span>
 								</center>
@@ -151,6 +151,12 @@
 					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 				</footer>
 
+			</div>
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="modal-content">
+					<img id="img01" style="max-width:100%">
+				</div>
 			</div>
 
 		<!-- Scripts -->

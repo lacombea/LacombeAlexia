@@ -42,7 +42,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/chromaScore/chargement.png" alt="" style="max-height: 200px; max-width: 200px;"/>
+										<img src="images/chromaScore/chargement.png" alt="" style="max-height: 200px; max-width: 200px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 									Jeu réalisé pour la Coding Blocks Jam '23 en 3 jours.<br>
 									ChromaScore est un jeu de rythme en pixel art avec un DJ qui nous réserve une petite surprise.<br>
@@ -65,7 +65,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/comebackHome/game.png" alt="" style="max-height: 200px; max-width: 200px;"/>
+										<img src="images/comebackHome/game.png" alt="" style="max-height: 200px; max-width: 200px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 									Jeu réalisé pour le cours de Principes de conception et de développement de jeux video à l'UQAC.<br>
 									Comeback Home jeu est un rogue-like dans un monde futuriste.<br>
@@ -87,7 +87,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/formationRV.png" alt="" style="max-height: 200px;max-width: 200px;"/>
+										<img src="images/formationRV.png" alt="" style="max-height: 200px;max-width: 200px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 									Stage assistant ingénieur en Réalité Virtuelle<br>
 									Mise en place d'une formation en réalité virtuelle pour des protocoles de traçabilité et d'hygiènes<br>
@@ -108,7 +108,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/logo/escape_shark.png" alt="" style="max-height: 200px;max-width: 200px;"/>
+										<img src="images/logo/escape_shark.png" alt="" style="max-height: 200px;max-width: 200px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 									Projet réalisé pour le cours de Conduite de Projet Objet et le projet "Ingénieur Honnête Homme" en 3ème année de l'ENIB<br>
 									Le but de ce jeu est de démystifier la mauvaise image des requins créer par le cinéma et autres médias à travers un jeu d'énigmes.<br>
@@ -130,7 +130,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/paniquecuisine.png" alt="" style="max-height: 200px; max-width: 200px;"/>
+										<img src="images/paniquecuisine.png" alt="" style="max-height: 200px; max-width: 200px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 									Projet réalisé pour le cours d'Initiation au Projet Informatique en 1ère année de l'ENIB dans le but de valider les acquis d'algorithmique.<br>
 									Space shooter dans un terminal.<br>
@@ -164,7 +164,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/SAMM.png" alt="" style="max-height: 200px;max-width: 200px;"/>
+										<img src="images/SAMM.png" alt="" style="max-height: 200px;max-width: 200px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 									Application réalisé pour le cours de Programmation de plateformes mobiles à l'UQAC.<br>
 									Le projet est continué personnellement depuis janvier 2023.
@@ -236,6 +236,12 @@
 					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 				</footer>
 
+			</div>
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="modal-content">
+					<img id="img01" style="max-width:100%">
+				</div>
 			</div>
 
 		<!-- Scripts -->

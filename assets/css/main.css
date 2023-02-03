@@ -3434,7 +3434,7 @@ margin: auto;
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 500px) {
 
 			#nav {
 				display: none;

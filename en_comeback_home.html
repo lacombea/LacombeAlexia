@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Comeback Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Comeback Home</h1>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="en_index.html">Introduction</a></li>
+							<li><a href="en_projets.html" class="active">Projets</a></li>
+							<li><a href="en_diplomes_formations.html">Education</a></li>
+							<li><a href="en_experience_pro.html">Work experiences</a></li>
+							<li><a href="fr_comeback_home.html" style="color:blueviolet; font-weight: bold">Français</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main special">
+								<header class="major">
+									<h2 style="text-align: center;">About</h2>
+								</header>
+								<p style="text-align:left;">
+									<span class="image right">
+										<img src="images/comebackHome/game.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+									</span>
+								</p>
+								<ul style="text-align: left;">
+									<li>Prototype created for the Principles of Game Design and Development course at UQAC.<br></li>
+									<li>Comeback Home is a rogue-like in a futuristic world.</li>
+									<li><b>Date : </b>from September to December (15 weeks)</li>
+									<li><b>Team composition : </b> 5 developers</li>
+									<li><b>Keywords :</b> Video Game, 3D, Rogue-like</li>
+									<li><b>Tools : </b>Unity, C#, Perforce, VSCode</li>
+								</ul>
+								<ul class="actions" style="justify-content: center; display: flex;">
+									<li><a href="documents/Comeback_Home_Concept_Document.pdf" target="_blank" class="button">Concept document</a></li>
+									<li><a href="documents/Comeback_Home_GDD.pdf" target="_blank" class="button">GDD</a></li>
+								</ul>
+								<p style="align-content:center;">Sorry documents are in french</p>
+							</section>
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Abstract</h2>
+								</header>
+								<p>
+									Comeback Home is a 3D rogue like on PC. The story takes place in a futuristic world where technology is very advanced and humans live on Earth in cohabitation with extraterrestrial races from the entire solar system.<br>
+									The player embodies a scientist, Edgar, whose goal is to travel through different parallel worlds in search of his daughter with the help of a machine he has created. 
+									The more the player uses the machine, the more hostile and dangerous the worlds he crosses will be.<br>
+									The game takes place in a large map "The City" which is populated by 3 classes of enemies arranged differently in the map in each new world. 
+									The more you progress in the game, the more numerous and better armed the enemies are. 
+									The player will have to show ingenuity to survive in all these worlds by skilfully using the weapons and objects that he will be able to recover from the bodies of his enemies.
+								</p>
+								<center>
+									<div style="max-width: 800px">
+										<div class='embed-container'>
+											<embed id="player" src="https://www.youtube.com/embed/8vA2T8Y1eJY" frameborder="0">
+										</div>
+											<p class = "legende">
+												Demo of the prototype
+										</p>
+									</div>
+								</center>
+							</section> 
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Gameplay and mechanics</h2>
+								</header>
+								<h3>OCR game loop</h3>
+								<p>
+									The <b>Objective</b> is to cross the city to reach the player's house, in order to perhaps find his daughter. <br>
+									The <b>Challenge</b> is to cross the zones and fight all the enemies that are on the player's way. They will be more and more numerous and strong. <br>
+									The <b>Reward</b> depends on whether the player finds the character's daughter in his house. If the house is empty then it was not the right place. The reward is that the player increases his chances of finding Marion in the next game loop. If he returns and sees his daughter Marion, then the game is completed.
+								</p>
+								
+								<h3>Rock-Paper-Scissors System</h3>
+								<p> 
+									The combat system of the game is a Rock-Paper-Scissors system, we have 3 types of enemies: the police, the reptilians and the criminals. Each one has a weakness and a resistance to the other types. 
+									Thus, the player will have to equip himself with powerful weapons against the type of enemies he encounters in order for his adventure to run smoothly.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/pierrefeuilleciseau.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Rock-Paper-Scissors System
+										</p>
+									</li>
+								</ul>
+								<h3>Inventory</h3>
+								<p> 
+									During the game, the player will pick up items that will help him later on such as weapons, armor or bandages. 
+									These items are kept at the end of a level for the next one so the more the player advances in the story the better equipped he will be to defeat the enemies. 
+									It also helps to stay in the <b>flow</b>, the game will never be too easy or too hard. <br>
+									The HUD shows the colors of the Police-Reptilian-Criminal types for each weapon and the remaining ammunition for firearms. 
+									These two pieces of information will be monitored by the player in order to succeed in the levels.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/armes.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Player's weapons
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/comebackHome/armure_bandage.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Player's armor and bandage
+										</p>
+									</li>
+								</ul>
+							</section> 
+							<section id="content" class="main">
+								<header class="major">
+									<h2>My role</h2>
+								</header>	
+								<p>
+									I participated in the development and programming of this game.
+									Here are the main tasks I took care of during the project::
+								</p>
+								<h3>Design and implementation of interfaces</h3>
+								<p>
+									For this project, we were 5 developers and didn't have an artist, that's why I was in charge of the design and the implementation of the interfaces. <br>
+									As for the HUD, we wanted to have quick access to our character's info: his health, his items (with their type and ammunition), a minimap. 
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/game.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											HUD
+										</p>
+									</li>
+								</ul>
+								<p>
+									Concerning the menus, it was necessary to stay in the futuristic theme, with the cyan color, the writing font and with little loaded menus.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/menu.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Main menu
+										</p>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/pause.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Menu pause
+										</p>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/controls.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Controls menu
+										</p>
+									</li>
+								</ul>
+								<h4>Encyclopedia</h4>
+								<p>
+									Creating an encyclopedia allowed us to keep track of the history that the player discovers and to recall information about weapons and types.<br>
+									With the time limit, the encyclopedia is frozen, an improvement would be to make the information unlock when the player encounters it for the first time.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/encyclopedia_type.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Encyclopedia : types
+										</p>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/encyclopedia_weapons.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Encyclopedia : weapons
+										</p>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/encyclopedia_personnage.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Encyclopédie : characters
+										</p>
+									</li>
+								</ul>
+								<h3>Tutorial</h3>
+								<p>
+									I made the first level, which serves as a tutorial, the player discovers how to move, fight (against 2 fairly harmless enemies).
+									He also meets the other characters, who give him bandages and/or armor and teach him how to use them. This also gives more context to the story.
+								</p>
+								<h3>Inventory</h3>
+								<p>
+									There were several of us working on the inventory, but I was mainly concerned with bandages and armor and their impact in the game. I also worked on the weapon change.<br> 
+									Taking care of the interfaces, I also made all the connection between game and inventory's interface.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/comebackHome/armes.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Player's weapons
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/comebackHome/armure_bandage.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Player's armor and bandage
+										</p>
+									</li>
+								</ul>
+								<h3>Backup</h3>
+								<p>
+									The main information we wanted to save in the current state of the prototype was the sound settings, the player's inventory and the max level he has reached.
+									The implementation of the backup was done using the PlayerPrefs of Unity.
+								</p>
+							</section>  
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Tools and languages used</h2>
+								</header>
+								<ul class="logo">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/unity.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/csharp.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/perforce.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/canva.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/photoshop.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/vscode.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/trello.png"></img>
+										</div>
+									</li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2 style="text-align: center">Plan :</h2>
+							<dl class="alt" style="text-align: center;">
+								<dd style="margin-left: 0;"><a href="en_index.html">Introduction</a></dd>
+								<dd style="margin-left: 0;"><a href="en_projets.html">Projets</a></dd>
+								<dd style="margin-left: 0;"><a href="en_diplomes_formations.html">Education</a></dd>
+								<dd style="margin-left: 0;"><a href="en_experience_pro.html">Work experiences</a></dd>
+							</dl>
+						</section>
+						<section>
+							<h2 style="text-align: center">Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>393 Price Est Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+								<dt>Number</dt>
+								<dd>(+33) 7 50 26 55 65</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
+							</dl>
+							<ul class="icons" style="justify-content: center; display: flex" >
+								<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="modal-content">
+					<img id="img01" style="max-width:100%">
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

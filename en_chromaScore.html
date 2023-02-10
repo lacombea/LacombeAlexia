@@ -25,11 +25,11 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="fr_projets.html" class="active">Projets</a></li>
-							<li><a href="fr_diplomes_formations.html">Diplômes et formations</a></li>
-							<li><a href="fr_experience_pro.html">Expériences professionnelles</a></li>
-							<li><a href="en_chromaScore.html" style="color:blueviolet; font-weight: bold">English</a></li>
+							<li><a href="en_index.html">Introduction</a></li>
+							<li><a href="en_projets.html" class="active">Projets</a></li>
+							<li><a href="en_diplomes_formations.html">Education</a></li>
+							<li><a href="en_experience_pro.html">Work experiences</a></li>
+							<li><a href="fr_chromaScore.html" style="color:blueviolet; font-weight: bold">Français</a></li>
 						</ul>
 					</nav>
 
@@ -39,7 +39,7 @@
 						<!-- Content -->
 							<section id="content" class="main special">
 								<header class="major">
-									<h2 style="text-align: center;">À propos</h2>
+									<h2 style="text-align: center;">About</h2>
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
@@ -47,27 +47,27 @@
 									</span>
 								</p>
 								<ul style="text-align: left;">
-									<li>Jeu réalisé pour la Coding Blocks Jam '23 en 3 jours</li>
-									<li>ChromaScore est un jeu de rythme en pixel art avec un DJ qui nous réserve une petite surprise.</li>
+									<li>Game made for the Coding Blocks Jam '23 in 3 days</li>
+									<li>ChromaScore is a rythme game in pixel art who gives us a little surprise.</li>
 									<li><b>Theme : </b>"Everything is backwards"</li>
-									<b>Classement général : </b>1<sup>er</sup>/23<br>
-									<li><b>Date : </b>janvier 2023 (3 jours)</li>
-									<li><b>Composition de l'équipe : </b>3 développeurs et 2 artistes</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 2D, Arcade, Rythme</li>
-									<li><b>Outils : </b>Unity, C#, GitHub, FMOD, VSCode</li>
+									<li><b>Overall ranking : </b>1<sup>er</sup>/23<br></li>
+									<li><b>Date : </b>January 2023 (3 jours)</li>
+									<li><b>Team composition : </b>3 developers and 2 artists</li>
+									<li><b>Keywords : </b>Video Game, 2D, Arcade, Rhythm</li>
+									<li><b>Tools : </b>Unity, C#, GitHub, FMOD, VSCode</li>
 								</ul>
 								
 							</section>
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Jouer</h2>
+									<h2>Play</h2>
 								</header>
 								<center>
 									<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/7208635/Test build/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="400px" width="640px"></iframe>
 								</center>
 								<p>
-									Jouer avec ←↓→, ou les touches ASD (qwerty) ou QSD (azerty).<br>
-									Gauche est cyan, bas est jaune, droit est magenta.
+									Play with the ←↓→ arrows, or the ASD (qwerty) or QSD (azerty) keys.<br>
+									Left is cyan, Down is yellow, Right is magenta.
 								</p>
 								<footer class="major">
 									<ul class="actions special">
@@ -77,16 +77,16 @@
 							</section>
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Mon rôle</h2>
+									<h2>My role</h2>
 								</header>
 								<p>
-									J'ai participé au développement et à la programmation de ce jeu.
-									Voici les principales tâches dont je me suis occupée durant le projet :
+									I participated in the development and programming of this game.
+									Here are the main tasks I took care of during the project:
 								</p>
-								<h3>Implémentation des menus et des paramètres</h3>
+								<h3>Implementation of menus and parameters</h3>
 								<p>
-									J'ai implémenté la navigation entre les différents menus et scène de notre jeu et également implémenté les options. <br>
-									J'ai ainsi découvert <b>FMOD</b> et la manière de gérer le son de notre jeu en via son API.
+									I implemented the navigation between the different menus and scenes of our game and also implemented the options. <br>
+									I discovered <b>FMOD</b> and the way to manage the sound of our game via its API.
 								</p>
 								<ul class="features">
 									<li>
@@ -94,7 +94,7 @@
 											<img class = "imgFrame" src="images/chromaScore/accueil.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Menu principal
+											Main menu
 										</p>
 									</li>
 									<li>
@@ -102,7 +102,7 @@
 											<img class = "imgFrame" src="images/chromaScore/options.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Menu d'options
+											Options menu
 										</p>
 									</li>
 									<li>
@@ -110,16 +110,16 @@
 											<img class = "imgFrame" src="images/chromaScore/pause.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Menu de pause
+											Pause menu
 										</p>
 									</li>
 								</ul>
-								<h3>Implémentation des sauvegardes</h3>
+								<h3>Implementation of backups</h3>
 								<p>
-									Pour ancrer notre jeu dans le style <b>Arcade</b>, nous voulions avoir la possibilité d'afficher un tableau des scores. 
-									Les données que nous sauvegarderons seront donc pour chaque musique un tableau contenant les 10 meilleurs scores. Le score contiendra un nom, un nombre de point et un rank.<br>
-									De plus, nous sauvegarderons aussi les paramètres de son pour que l'utilisateur les conserve entre plusieurs parties.<br>
-									Pour ce faire, j'ai mis en place un système de sauvegarde en utilisant un fichier json.
+									To anchor our game in the <b>Arcade</b> style, we wanted to have the possibility to display a scoreboard. 
+									The data we will save will be for each music a table containing the 10 best scores. The score will contain a name, a number of points and a rank.<br>
+									In addition, we will also save the sound settings so that the user can keep them between several games.<br>
+									To do this, I set up a backup system using a json file.
 								</p>
 								<ul class="features">
 									<li>
@@ -127,7 +127,7 @@
 											<img class = "imgFrame" src="images/chromaScore/data.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Data sauvegardés
+											Saved data
 										</p>
 									</li>
 									<li>
@@ -143,15 +143,15 @@
 											<img class = "imgFrame" src="images/chromaScore/scoreBoard.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Affichage des scores
+											Display of scores
 										</p>
 									</li>
 								</ul>
 								<h3>Build WebGL</h3>
 								<p>
-									Je me suis également occupée de créer le build WebGL du jeu. 
-									C'est à cette étape que nous avons décidé de rajouter un écran de chargement permettant à FMOD de s'initialiser avant de lancer le jeu. 
-									Sans cet écran, le son du jeu ne se lançait qu'en changeant de menu. 
+									I also took care of creating the WebGL build of the game. 
+									It is at this stage that we decided to add a loading screen allowing FMOD to initialize itself before launching the game. 
+									Without this screen, the sound of the game was only launched by changing the menu. 
 								</p>
 								<ul class="features">
 									<li>
@@ -159,14 +159,14 @@
 											<img class = "imgFrame" src="images/chromaScore/chargement.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Écran de chargement
+											Loading screen
 										</p>
 									</li>
 								</ul>
 							</section>
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Outils et langages utilisés</h2>
+									<h2>Tools and languages used</h2>
 								</header>
 								<ul class="logo">
 									<li>
@@ -203,34 +203,34 @@
 							</section>
 					</div>
 				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<h2 style="text-align: center">Plan :</h2>
-						<dl class="alt" style="text-align: center;">
-							<dd style="margin-left: 0;"><a href="index.html">Introduction</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_projets.html">Projets</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_diplomes_formations.html">Diplômes et formations</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_experience_pro.html">Expériences professionnelles</a></dd>
-						</dl>
-					</section>
-					<section>
-						<h2 style="text-align: center">Contact</h2>
-						<dl class="alt">
-							<dt>Adresse</dt>
-							<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
-							<dt>Téléphone</dt>
-							<dd>(+33) 7 50 26 55 65</dd>
-							<dt>Email</dt>
-							<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
-						</dl>
-						<ul class="icons" style="justify-content: center; display: flex" >
-							<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
-						</ul>
-					</section>
-					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
+					<footer id="footer">
+						<section>
+							<h2 style="text-align: center">Plan :</h2>
+							<dl class="alt" style="text-align: center;">
+								<dd style="margin-left: 0;"><a href="en_index.html">Introduction</a></dd>
+								<dd style="margin-left: 0;"><a href="en_projets.html">Projets</a></dd>
+								<dd style="margin-left: 0;"><a href="en_diplomes_formations.html">Education</a></dd>
+								<dd style="margin-left: 0;"><a href="en_experience_pro.html">Work experiences</a></dd>
+							</dl>
+						</section>
+						<section>
+							<h2 style="text-align: center">Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>393 Price Est Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+								<dt>Number</dt>
+								<dd>(+33) 7 50 26 55 65</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
+							</dl>
+							<ul class="icons" style="justify-content: center; display: flex" >
+								<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
 			</div>
 			<div id="modal01" class="modal" onclick="this.style.display='none'">

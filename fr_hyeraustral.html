@@ -43,7 +43,7 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/hyperaustral.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+										<img src="images/HyperAustral/Icone.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
@@ -82,7 +82,7 @@
 									J'ai participé au développement et à la programmation de ce jeu.
 									Voici les principales tâches dont je me suis occupée durant le projet :
 								</p>
-								<h3>Implémentation de la mécanique d'assignation des passagers/h3>
+								<h3>Implémentation de la mécanique d'assignation des passagers</h3>
 								<p>
 									J'ai implémenté la mécanique permettant d'assigner les passagers aux salles et aux activités présentes au sein de l'avion-arche Notos. 
 									Pour se faire j'ai tout d'abord conçu la structure des salles et activités : les salles sont représentés par des scripts qui référence des activités qui sont elle des scriptables objects.
@@ -145,10 +145,10 @@
 								</ul> -->
 								<h3>Implémentation des sauvegardes</h3>
 								<p>
-									Pour ancrer notre jeu dans le style <b>Arcade</b>, nous voulions avoir la possibilité d'afficher un tableau des scores. 
-									Les données que nous sauvegarderons seront donc pour chaque musique un tableau contenant les 10 meilleurs scores. Le score contiendra un nom, un nombre de point et un rank.<br>
-									De plus, nous sauvegarderons aussi les paramètres de son pour que l'utilisateur les conserve entre plusieurs parties.<br>
-									Pour ce faire, j'ai mis en place un système de sauvegarde en utilisant un fichier json.
+									Nous avons voulu laisser au jour la possibilité de pouvoir sauvegarde et reprendre sa partie plus tard. 
+									Je me suis donc occupée de la mise en place du système de sauvegarde en utilisant un fichier Json.
+									Il fallait ainsi sauvegarder les passagers, les évènements passés ainsi que la distance parcourue, le reste des informations de la partie pouvant ainsi être déduite.
+									Par exemple, le chapitre actuel pourra être déduit par la distance parcourue.
 								</p>
 								<!-- <ul class="features">
 									<li>

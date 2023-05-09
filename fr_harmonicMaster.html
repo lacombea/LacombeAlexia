@@ -43,19 +43,175 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/harmonicMaster.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+										<img src="images/ForetDePan/Title.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
 									<li>Prototype réalisé pour le cours de Jeux Sérieux à l'UQAC</li>
 									<li>Forêt de Pan est un jeu permettant de travailler la reconnaissance auditive des progressions harmoniques</li>
-									<li><b>Date : </b>depuis mars 2023</li>
+									<li><b>Date : </b>de mars à avril 2023 (8 semaines)</li>
 									<li><b>Composition de l'équipe : </b>5 développeurs et 1 expert en musique</li>
 									<li><b>Mots clés : </b>Jeu sérieux, 3D, Musical</li>
 									<li><b>Outils : </b>Unity, C#, Perforce, Rider</li>
 								</ul>
 								<ul class="actions" style="justify-content: center; display: flex;">
-									<li><a href="documents/Harmonic_Master_One_Pager.pdf" target="_blank" class="button">OnePager</a></li>
+									<li><a href="documents/Harmonic_Master_One_Pager.pdf" target="_blank" class="button">One Pager</a></li>
+								</ul>
+							</section><section id="content" class="main">
+								<header class="major">
+									<h2>Résumé</h2>
+								</header>
+								<p>
+									Forêt de Pan est un jeu sérieux d'action aventure musical. 
+									Il permet au joueur d'apprendre à reconnaître les écarts entre les progressions harmoniques. 
+									Pour se faire, le joueur incarne un musicien qui doit calmer les animaux de la forêt en jouant l'accord qui correspond à celui que chante l'animal.
+								</p>
+								<!-- <h3>One Pager</h3>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/ForetDePan/OnePager.png" alt="" /></span></div>
+									</div>
+								</div> -->
+								<!-- Vidéo
+									<center>
+									<div style="max-width: 800px">
+										<div class='embed-container'>
+											<embed id="player" src="https://www.youtube.com/embed/w5U2fBAAP3I" frameborder="0">
+										</div>
+											<p class = "legende">
+											Trailer du prototype
+										</p>
+									</div>
+								</center> -->
+							</section> 
+							<!-- webgl
+								<section id="content" class="main">
+								<header class="major">
+									<h2>Jouer</h2>
+								</header>
+								<center>
+									<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/7208635/Test build/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="400px" width="640px"></iframe>
+								</center>
+								<p>
+									Jouer avec ←↓→, ou les touches ASD (qwerty) ou QSD (azerty).<br>
+									Gauche est cyan, bas est jaune, droit est magenta.
+								</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://eddiebreeg.itch.io/chromascore" class="button">Page itch.io</a></li>
+									</ul>
+								</footer>
+							</section> -->
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Gameplay et mécaniques</h2>
+								</header>
+								<p>
+									Le joueur doit retrouver les animaux cachés dans la forêt puis les calmer. <br>
+									Pour se faire, il peut chanter : son chant est l'harmonique 1 et l'animal le plus proche lui répond en chantant sa propre harmonique. 
+									Le joueur peut ainsi repérer où se situe l'animal car le son est spatialiser et qu'une flèche lui indique la direction de l'animal.
+									De plus, il pourra reconnaître l’harmonique associé à l'animal grâce au son. <br>
+									Un fois que l'animal est à proximité, le joueur doit le calmer en faisant un combo du nombre correspond à l'harmonique de l'animal.
+								</p>
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Mon rôle</h2>
+								</header>
+								<p>
+									J'ai participé au développement et à la programmation de ce jeu.
+									Voici les principales tâches dont je me suis occupée durant le projet :
+								</p>
+								<h3>Mise en place des 3C (Caméra, Personnage, Controller)</h3>
+								<p>
+									J'ai mis en place les inputs de ce projet avec le "New Inputs Manager" d'Unity et je me suis occupé de la mise en place de la caméra Top-down à l'aide de Cinemachine.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/ForetDePan/InputManager.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Input Manager
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/ForetDePan/InputManagerCode.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Code de l'Input Manager
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/ForetDePan/3C.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Caméra Top-down
+										</p>
+									</li>
+								</ul>
+								<h3>Implémentation de la mécanique pour calmer les animaux</h3>
+								<p>
+									Je me suis occupée de la mise en place du combo pour calmer les animaux : pendant quelques secondes le joueur peut appuyer sur la touche de "calme" et incrémenter le combo jusqu'à la valeur souhaité. 
+									Si il va au dessus de 7, qui est le maximum de différence entre les harmoniques le combo repasse à 1.
+									J'ai réalisé l'affichage de celui ci à l'écran et également des rétroactions sonores et visuels de celle ci.
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/ForetDePan/ComboEnCours.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Affichage en cours de combo
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/ForetDePan/ComboReussis.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Affichage réussite
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/ForetDePan/ComboEchec.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Affichage échec
+										</p>
+									</li>
+								</ul>
+								<h3>Animation et feedback sonores</h3>
+								<p>
+									J'ai pour ce projet pris en main l'outils mixamo et j'ai ainsi implémenté les différentes animation du personnage : la marche, jouer de la guitare pour calmer les animaux, la joie lors de la réussite d'un combo ou encore une animation lors de 'échec d'un combo. 
+								</p>
+								<ul class="features">
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/ForetDePan/idle.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Animation d'idle
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/ForetDePan/guitare.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Animation de calmer les animaux
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/ForetDePan/true.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Animation de réussite du combo
+										</p>
+									</li>
 								</ul>
 							</section>
 							<section id="content" class="main">
@@ -81,6 +237,11 @@
 									<li>
 										<div class = "frame">
 											<img class = "imgFrame" src="images/logo/rider.png"></img>
+										</div>
+									</li>
+									<li>
+										<div class = "frame">
+											<img class = "imgFrame" src="images/logo/mixamo.png"></img>
 										</div>
 									</li>
 								</ul>

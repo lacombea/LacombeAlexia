@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>ExploriumVR</title>
+		<title>Flickering Shadows</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,17 +19,17 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Explorium VR</h1>
+						<h1>Flickering Shadows</h1>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="fr_projets.html" class="active">Projets</a></li>
-							<li><a href="fr_diplomes_formations.html">Diplômes et formations</a></li>
-							<li><a href="fr_experience_pro.html">Expériences professionnelles</a></li>
-							<li><a href="en_exploriumVR.html" style="color:blueviolet; font-weight: bold">English</a></li>
+							<li><a href="en_index.html">Introduction</a></li>
+							<li><a href="en_projets.html" class="active">Projets</a></li>
+							<li><a href="en_diplomes_formations.html">Education</a></li>
+							<li><a href="en_experience_pro.html">Work experiences</a></li>
+							<li><a href="fr_flickeringShadows.html" style="color:blueviolet; font-weight: bold">Français</a></li>
 						</ul>
 					</nav>
 
@@ -39,51 +39,57 @@
 						<!-- Content -->
 							<section id="content" class="main special">
 								<header class="major">
-									<h2 style="text-align: center;">À propos</h2>
+									<h2 style="text-align: center;">About</h2>
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/exploriumVR.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+										<img src="images/FlickeringShadows/titre.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
-									<li>Prototype réalisé pour le cours d’Interaction 3D et Réalité Virtuelle à l'UQAC</li>
-									<li>Explorium VR est une application d'exploration d'environnement tel que la forêt, la plage, etc en Réalité Virtuelle.</li>
-									<li><b>Date : </b>de mars à avril 2023 (8 semaines)</li>
-									<li><b>Composition de l'équipe : </b>3 développeurs</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 3D, Réalité Virtuelle, Exploration</li>
-									<li><b>Outils : </b>Unity, C#, Oculus, Perforce, Rider</li>
+									<li>Prototype made for the Practical Workshop course in JV 2 at UQAC.</li>
+									<li>Flickering Shadows is a top-down fixed camera 3D puzzle game.</li>
+									<li><b>Date : </b>since May 2023</li>
+									<li><b>Team composition : </b>4 developers</li>
+									<li><b>Keywords : </b>Video Game, 3D, enigma, AI</li>
+									<li><b>Tools : </b>Unreal, C++, Perforce, Rider</li>
+								</ul>
+								<ul class="actions" style="justify-content: center; display: flex;">
+									<li><a href="documents/FlickeringShadows_One_Pager.pdf" target="_blank" class="button">One Pager</a></li>
 								</ul>
 							</section>
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Résumé</h2>
+									<h2>Abstract</h2>
 								</header>
 								<p>
-									ExploriumVR est un prototype de jeu d'exploration en VR pour les enfants.<br>
-									Les joueurs pourront ainsi se balader dans l'environnement en ramassant des objets dans leur inventaire et en complétant des missions.
+									Flickering Shadows is a top-down fixed camera 3D puzzle game.<br>
+									Play as a young girl from the school's Occult Science Club who seeks to complete the ritual to unleash a powerful demo.
+									To achieve this, you will have to cross a gloomy dungeon plunged into darkness while carrying your candle to the place of the ritual.
+									However, beware of shadow creatures who will seek to extinguish your flame as soon as your back is turned!
 								</p>
-								<center>
+								<!-- <center>
 									<div style="max-width: 800px">
 										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/JAJft69x1uU" frameborder="0">
+											<embed id="player" src="https://www.youtube.com/embed/w5U2fBAAP3I" frameborder="0">
 										</div>
 											<p class = "legende">
 											Trailer du prototype
 										</p>
 									</div>
-								</center>
+								</center> -->
 							</section> 
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Mon rôle</h2>
+									<h2>
+										My role</h2>
 								</header>
 								<p>
-									J'ai participé au développement et à la programmation de ce jeu.
-									Voici les principales tâches dont je me suis occupée durant le projet :
+									I participated in the development and programming of this game.
+									Here are the main tasks I took care of during the project:
 								</p>
-								<h3>Implémentation des déplacements et des interactions en VR</h3>
-								<p>
+								<h3>Monster AI implementation</h3>
+								<!-- <p>
 									J'ai implémenté les déplacements et les interactions dans l'environnement en utilisant openXR.
 									Le prototype dispose ainsi de déplacement par téléportation ou continue et ainsi que de rotation continue ou par instantanée.
 									Le joueur peut saisir des objets et interagir avec des menus.
@@ -165,36 +171,21 @@
 											Sélection d'un mouvement aléatoire
 										</p>
 									</li>
-								</ul>
-								<h3>Implémentation de consigne de sécurité</h3>
-								<p>
-									Notre application se destinant à des enfants, il fallait mettre en place des consigne de sécurité afin que les enfants ne reproduisent pas les actions dangereuses qu'ils peuvent faire dans l'environnement virtuel dans la réalité. 
-									Par exemple : l'enfant peut toucher et ramasser différents champignon, une indication indique donc que en réalité ils pourraient être toxique et donc être dangereux
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/ExploriumVR/indications.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Indication de sécurité pour les champignons
-										</p>
-									</li>
-								</ul>
-							</section>
+								</ul>-->
+							</section> 
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Outils et langages utilisés</h2>
+									<h2>Tools and languages ​​used</h2>
 								</header>
 								<ul class="logo">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unity.png"></img>
+											<img class = "imgFrame" src="images/logo/unreal.png"></img>
 										</div>
 									</li>
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/csharp.png"></img>
+											<img class = "imgFrame" src="images/logo/cpp.png"></img>
 										</div>
 									</li>
 									<li>
@@ -215,18 +206,18 @@
 					<section>
 						<h2 style="text-align: center">Plan :</h2>
 						<dl class="alt" style="text-align: center;">
-							<dd style="margin-left: 0;"><a href="index.html">Introduction</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_projets.html">Projets</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_diplomes_formations.html">Diplômes et formations</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_experience_pro.html">Expériences professionnelles</a></dd>
+							<dd style="margin-left: 0;"><a href="en_index.html">Introduction</a></dd>
+							<dd style="margin-left: 0;"><a href="en_projets.html">Projets</a></dd>
+							<dd style="margin-left: 0;"><a href="en_diplomes_formations.html">Education</a></dd>
+							<dd style="margin-left: 0;"><a href="en_experience_pro.html">Work experiences</a></dd>
 						</dl>
 					</section>
 					<section>
 						<h2 style="text-align: center">Contact</h2>
 						<dl class="alt">
-							<dt>Adresse</dt>
-							<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
-							<dt>Téléphone</dt>
+							<dt>Address</dt>
+							<dd>393 Price Est Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+							<dt>Number</dt>
 							<dd>(+33) 7 50 26 55 65</dd>
 							<dt>Email</dt>
 							<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>

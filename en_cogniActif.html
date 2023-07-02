@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Flickering Shadows</title>
+		<title>Cogni-Actif</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,17 +19,17 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Flickering Shadows</h1>
+						<h1>Cogni-Actif</h1>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="fr_projets.html" class="active">Projets</a></li>
-							<li><a href="fr_diplomes_formations.html">Diplômes et formations</a></li>
-							<li><a href="fr_experience_pro.html">Expériences professionnelles</a></li>
-							<li><a href="en_flickeringShadows.html" style="color:blueviolet; font-weight: bold">English</a></li>
+							<li><a href="en_index.html">Introduction</a></li>
+							<li><a href="en_projets.html" class="active">Projects</a></li>
+							<li><a href="en_diplomes_formations.html">Education</a></li>
+							<li><a href="en_experience_pro.html">Work experiences</a></li>
+							<li><a href="fr_cogniActif.html" style="color:blueviolet; font-weight: bold">English</a></li>
 						</ul>
 					</nav>
 
@@ -39,96 +39,102 @@
 						<!-- Content -->
 							<section id="content" class="main special">
 								<header class="major">
-									<h2 style="text-align: center;">À propos</h2>
+									<h2 style="text-align: center;">About</h2>
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/FlickeringShadows/titre.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+										<img src="images/logo/UQAC.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
-									<li>Prototype réalisé pour le cours d'Atelier Pratique en JV 2 à l'UQAC.</li>
-									<li>Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.</li>
-									<li><b>Date : </b>depuis mai 2023</li>
-									<li><b>Composition de l'équipe : </b>4 développeurs</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 3D, énigme, IA</li>
-									<li><b>Outils : </b>Unreal, C++, Perforce, Rider</li>
-								</ul>
-								<ul class="actions" style="justify-content: center; display: flex;">
-									<li><a href="documents/FlickeringShadows_One_Pager.pdf" target="_blank" class="button">One Pager</a></li>
+									<li>Research assistant project on the Cogni-Actif program.</li>
+									<li>Cogni-Actif is a game aimed at allowing primary school students to perform daily physical activity while solving math or French exercises for example.</li>
+									<li><b>Date : </b>de mai à juin 2023</li>
+									<li><b>Team composition : </b>5 developers and 1 expert</li>
+									<li><b>Keywords : </b>Video Game, Serious Game, learning, physical activity</li>
+									<li><b>Tools : </b>Unity, C#, Git, Rider</li>
 								</ul>
 							</section>
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Résumé</h2>
+									<h2>Abstract</h2>
 								</header>
 								<p>
-									Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.<br>
-									Incarnez une jeune fille appartenant au club de science occulte de l'école qui cherche à terminer le rituel pour libérer un puissant démo. 
-									Pour y parvenir, vous devrez traverser un donjon lugubre plongé dans l'obscurité en transportant votre bougie jusqu'au lieu du rituel.
-									Cependant, méfiez vous des créatures de l'ombre qui chercheront à éteindre votre flamme dès que vous aurez le dos tourné !
+									Cogni-Actif is a game aimed at allowing primary school students to perform daily physical activity while solving math or French exercises for example.<br>
+									To do this, the students follow the movements made by a robot on the screen and must do enough physical activity to fill up its battery.
 								</p>
-								<center>
+								<!-- <center>
 									<div style="max-width: 800px">
 										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/i_du5-NRNNc" frameborder="0">
+											<embed id="player" src="https://www.youtube.com/embed/w5U2fBAAP3I" frameborder="0">
 										</div>
 											<p class = "legende">
 											Trailer du prototype
 										</p>
 									</div>
-								</center>
+								</center> -->
 							</section> 
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Mon rôle</h2>
+									<h2>My role</h2>
 								</header>
 								<p>
-									J'ai participé au développement et à la programmation de ce jeu.
-									Voici les principales tâches dont je me suis occupée durant le projet :
+									I participated in the development and programming of this game.
+									Here are the main tasks I took care of during the project:
 								</p>
-								<h3>Implémentation de l'intelligence artificielle des monstres</h3>
+								<h3>
+									Implementation of statistics and the bank
+								</h3>
 								<p>
-									J'ai implémenté les IA du monstres et du boss du jeu ainsi que leur animation. <br>
-									J'ai ainsi utilisé les différents outils d'IA de programmation d'IA : Behavior Tree, BlackBoard, Service, Task, Decorator et EQS. 
+									I implemented everything related to player statistics and in-game currency.
+									The prototype thus has displays of various statistics on physical activity.
+									By practicing the activity, the players earn DBs (game currencies), at the end of the mini-game or thanks to a wheel of luck if the teacher considers that they have answered the questions well enough and carried out the movements.
 								</p>
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/FlickeringShadows/Animation.png" style="cursor:pointer" onclick="onClick(this)"></img>
+											<img class = "imgFrame" src="images/CogniActif/end.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Animation du monstre
+											Mini-game end screen
 										</p>
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/FlickeringShadows/BehaviorTree.png" style="cursor:pointer" onclick="onClick(this)"></img>
+											<img class = "imgFrame" src="images/CogniActif/gift.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Behavior Tree du monstre 
+											Wheel of luck
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/CogniActif/stats.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Global statistics menu
 										</p>
 									</li>
 								</ul> 
 							</section> 
 							<section id="content" class="main">
 								<header class="major">
-									<h2>Outils et langages utilisés</h2>
+									<h2>Tools and languages ​​used</h2>
 								</header>
 								<ul class="logo">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unreal.png"></img>
+											<img class = "imgFrame" src="images/logo/unity.png"></img>
 										</div>
 									</li>
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/cpp.png"></img>
+											<img class = "imgFrame" src="images/logo/csharp.png"></img>
 										</div>
 									</li>
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/perforce.png"></img>
+											<img class = "imgFrame" src="images/logo/github.png"></img>
 										</div>
 									</li>
 									<li>

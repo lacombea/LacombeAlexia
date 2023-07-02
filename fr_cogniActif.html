@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Flickering Shadows</title>
+		<title>Cogni-Actif</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Flickering Shadows</h1>
+						<h1>Cogni-Actif</h1>
 					</header>
 
 				<!-- Nav -->
@@ -29,7 +29,7 @@
 							<li><a href="fr_projets.html" class="active">Projets</a></li>
 							<li><a href="fr_diplomes_formations.html">Diplômes et formations</a></li>
 							<li><a href="fr_experience_pro.html">Expériences professionnelles</a></li>
-							<li><a href="en_flickeringShadows.html" style="color:blueviolet; font-weight: bold">English</a></li>
+							<li><a href="en_cogniActif.html" style="color:blueviolet; font-weight: bold">English</a></li>
 						</ul>
 					</nav>
 
@@ -43,19 +43,16 @@
 								</header>
 								<p style="text-align:left;">
 									<span class="image right">
-										<img src="images/FlickeringShadows/titre.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+										<img src="images/logo/UQAC.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
 									</span>
 								</p>
 								<ul style="text-align: left;">
-									<li>Prototype réalisé pour le cours d'Atelier Pratique en JV 2 à l'UQAC.</li>
-									<li>Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.</li>
-									<li><b>Date : </b>depuis mai 2023</li>
-									<li><b>Composition de l'équipe : </b>4 développeurs</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 3D, énigme, IA</li>
-									<li><b>Outils : </b>Unreal, C++, Perforce, Rider</li>
-								</ul>
-								<ul class="actions" style="justify-content: center; display: flex;">
-									<li><a href="documents/FlickeringShadows_One_Pager.pdf" target="_blank" class="button">One Pager</a></li>
+									<li>Projet d'assistante de rechercher sur le programme Cogni-Actif.</li>
+									<li>Cogni-Actif st un jeu visant à permet à des élèves en primaire d'effectuer quotidiennement de l'activité physique tout en résolvant des exercices de mathématiques ou de français par exemple.</li>
+									<li><b>Date : </b>de mai à juin 2023</li>
+									<li><b>Composition de l'équipe : </b>5 développeurs et 1 experte</li>
+									<li><b>Mots clés : </b>Jeu vidéo, jeu sérieux, apprentissage, activité physique</li>
+									<li><b>Outils : </b>Unity, C#, Git, Rider</li>
 								</ul>
 							</section>
 							<section id="content" class="main">
@@ -63,21 +60,19 @@
 									<h2>Résumé</h2>
 								</header>
 								<p>
-									Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.<br>
-									Incarnez une jeune fille appartenant au club de science occulte de l'école qui cherche à terminer le rituel pour libérer un puissant démo. 
-									Pour y parvenir, vous devrez traverser un donjon lugubre plongé dans l'obscurité en transportant votre bougie jusqu'au lieu du rituel.
-									Cependant, méfiez vous des créatures de l'ombre qui chercheront à éteindre votre flamme dès que vous aurez le dos tourné !
+									Cogni-Actif st un jeu visant à permet à des élèves en primaire d'effectuer quotidiennement de l'activité physique tout en résolvant des exercices de mathématiques ou de français par exemple.<br>
+									Pour se faire les élèves suivent les mouvements effectués par un robot sur l'écran et doivent faire assez d'activités physiques pour remplir sa batterie.
 								</p>
-								<center>
+								<!-- <center>
 									<div style="max-width: 800px">
 										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/i_du5-NRNNc" frameborder="0">
+											<embed id="player" src="https://www.youtube.com/embed/w5U2fBAAP3I" frameborder="0">
 										</div>
 											<p class = "legende">
 											Trailer du prototype
 										</p>
 									</div>
-								</center>
+								</center> -->
 							</section> 
 							<section id="content" class="main">
 								<header class="major">
@@ -87,26 +82,35 @@
 									J'ai participé au développement et à la programmation de ce jeu.
 									Voici les principales tâches dont je me suis occupée durant le projet :
 								</p>
-								<h3>Implémentation de l'intelligence artificielle des monstres</h3>
+								<h3>Implémentation de statistiques et de la banque</h3>
 								<p>
-									J'ai implémenté les IA du monstres et du boss du jeu ainsi que leur animation. <br>
-									J'ai ainsi utilisé les différents outils d'IA de programmation d'IA : Behavior Tree, BlackBoard, Service, Task, Decorator et EQS. 
+									J'ai implémenté tous ce qui touche aux statistiques du joueurs et à la monnaie du jeu.
+									Le prototype dispose ainsi d'affichages de différentes statistiques sur l'activités physiques. 
+									En pratiquant de l'activité, les joueurs gagnent des DBs (monnaies du jeu), en fin de mini-jeu ou grâce à une roue de la chance si le professeur estime qu'ils ont assez bien répondu aux questions et réalisés les mouvements.
 								</p>
 								<ul class="features">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/FlickeringShadows/Animation.png" style="cursor:pointer" onclick="onClick(this)"></img>
+											<img class = "imgFrame" src="images/CogniActif/end.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Animation du monstre
+											Ecran de fin de mini-jeu
 										</p>
 									</li>
 									<li>
 										<div class="frame">
-											<img class = "imgFrame" src="images/FlickeringShadows/BehaviorTree.png" style="cursor:pointer" onclick="onClick(this)"></img>
+											<img class = "imgFrame" src="images/CogniActif/gift.png" style="cursor:pointer" onclick="onClick(this)"></img>
 										</div>
 										<p class = "legende">
-											Behavior Tree du monstre 
+											Roue de la chance
+										</p>
+									</li>
+									<li>
+										<div class="frame">
+											<img class = "imgFrame" src="images/CogniActif/stats.png" style="cursor:pointer" onclick="onClick(this)"></img>
+										</div>
+										<p class = "legende">
+											Menu des statistiques globales 
 										</p>
 									</li>
 								</ul> 
@@ -118,17 +122,17 @@
 								<ul class="logo">
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unreal.png"></img>
+											<img class = "imgFrame" src="images/logo/unity.png"></img>
 										</div>
 									</li>
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/cpp.png"></img>
+											<img class = "imgFrame" src="images/logo/csharp.png"></img>
 										</div>
 									</li>
 									<li>
 										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/perforce.png"></img>
+											<img class = "imgFrame" src="images/logo/github.png"></img>
 										</div>
 									</li>
 									<li>

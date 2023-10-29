@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>ChromaScore</title>
+		<title>Chroma Score</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,239 +15,251 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Chroma Score</h1>
-					</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="fr_projets.html" class="active">Projets</a></li>
+					<li><a href="index.html#experience_pro">Expériences professionnelles</a></li>
+					<li><a href="index.html#formation">Diplômes et formations</a></li>
+					<li><a href="en_chromaScore.html">English</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Main -->
+			<div id="main">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="fr_projets.html" class="active">Projets</a></li>
-							<li><a href="fr_diplomes_formations.html">Diplômes et formations</a></li>
-							<li><a href="fr_experience_pro.html">Expériences professionnelles</a></li>
-							<li><a href="en_chromaScore.html" style="color:blueviolet; font-weight: bold">English</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Content -->
-							<section id="content" class="main special">
-								<header class="major">
-									<h2 style="text-align: center;">À propos</h2>
-								</header>
-								<p style="text-align:left;">
-									<span class="image right">
-										<img src="images/chromaScore/chargement.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
-									</span>
-								</p>
-								<ul style="text-align: left;">
-									<li>Jeu réalisé pour la Coding Blocks Jam '23 en 3 jours</li>
-									<li>ChromaScore est un jeu de rythme en pixel art avec un DJ qui nous réserve une petite surprise.</li>
-									<li><b>Theme : </b>"Everything is backwards"</li>
-									<b>Classement général : </b>1<sup>er</sup>/23<br>
-									<li><b>Date : </b>janvier 2023 (3 jours)</li>
-									<li><b>Composition de l'équipe : </b>3 développeurs et 2 artistes</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 2D, Arcade, Rythme</li>
-									<li><b>Outils : </b>Unity, C#, GitHub, FMOD, VSCode</li>
-								</ul>
-								
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Jouer</h2>
-								</header>
-								<center>
-									<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/7208635/Test build/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="400px" width="640px"></iframe>
-								</center>
-								<p>
-									Jouer avec ←↓→, ou les touches ASD (qwerty) ou QSD (azerty).<br>
-									Gauche est cyan, bas est jaune, droit est magenta.
-								</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://eddiebreeg.itch.io/chromascore" class="button">Page itch.io</a></li>
-									</ul>
-								</footer>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Mon rôle</h2>
-								</header>
-								<p>
-									J'ai participé au développement et à la programmation de ce jeu.
-									Voici les principales tâches dont je me suis occupée durant le projet :
-								</p>
-								<h3>Implémentation des menus et des paramètres</h3>
-								<p>
-									J'ai implémenté la navigation entre les différents menus et scène de notre jeu et également implémenté les options. <br>
-									J'ai ainsi découvert <b>FMOD</b> et la manière de gérer le son de notre jeu en via son API.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/chromaScore/accueil.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Menu principal
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/options.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Menu d'options
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/pause.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Menu de pause
-										</p>
-									</li>
-								</ul>
-								<h3>Implémentation des sauvegardes</h3>
-								<p>
-									Pour ancrer notre jeu dans le style <b>Arcade</b>, nous voulions avoir la possibilité d'afficher un tableau des scores. 
-									Les données que nous sauvegarderons seront donc pour chaque musique un tableau contenant les 10 meilleurs scores. Le score contiendra un nom, un nombre de point et un rank.<br>
-									De plus, nous sauvegarderons aussi les paramètres de son pour que l'utilisateur les conserve entre plusieurs parties.<br>
-									Pour ce faire, j'ai mis en place un système de sauvegarde en utilisant un fichier json.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/chromaScore/data.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Data sauvegardés
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/score.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Class Score
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/chromaScore/scoreBoard.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Affichage des scores
-										</p>
-									</li>
-								</ul>
-								<h3>Build WebGL</h3>
-								<p>
-									Je me suis également occupée de créer le build WebGL du jeu. 
-									C'est à cette étape que nous avons décidé de rajouter un écran de chargement permettant à FMOD de s'initialiser avant de lancer le jeu. 
-									Sans cet écran, le son du jeu ne se lançait qu'en changeant de menu. 
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/chromaScore/chargement.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Écran de chargement
-										</p>
-									</li>
-								</ul>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Outils et langages utilisés</h2>
-								</header>
-								<ul class="logo">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unity.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/csharp.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/fmod.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/webGL.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/github.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/vscode.png"></img>
-										</div>
-									</li>
-								</ul>
-							</section>
+				<!-- Introduction -->
+				<article>
+					<div id="header">
+						<img src="images/bannieres/ChromaScore.png"/>
 					</div>
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<h2 style="text-align: center">Plan :</h2>
-						<dl class="alt" style="text-align: center;">
-							<dd style="margin-left: 0;"><a href="index.html">Introduction</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_projets.html">Projets</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_diplomes_formations.html">Diplômes et formations</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_experience_pro.html">Expériences professionnelles</a></dd>
-						</dl>
-					</section>
-					<section>
-						<h2 style="text-align: center">Contact</h2>
-						<dl class="alt">
-							<dt>Adresse</dt>
-							<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
-							<dt>Téléphone</dt>
-							<dd>(+33) 7 50 26 55 65</dd>
-							<dt>Email</dt>
-							<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
-						</dl>
-						<ul class="icons" style="justify-content: center; display: flex" >
-							<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
-						</ul>
-					</section>
-					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
+				</article>
 
+				<!-- Content -->
+				<article id="projets" class="wrapper style3">
+					<div class="container">
+
+						<!-- Introduction -->
+						<section id="content" class="main special">
+							<header class="major">
+								<h2 style="text-align: center;">À propos</h2>
+							</header>
+							<p style="text-align:left;">
+							</p>
+							<ul style="text-align: left;">
+								<li>Jeu réalisé pour la Coding Blocks Jam '23 en 3 jours</li>
+								<li>ChromaScore est un jeu de rythme en pixel art avec un DJ qui nous réserve une petite surprise.</li>
+								<li><b>Theme : </b>"Everything is backwards"</li>
+								<li><b>Classement général : </b>1<sup>er</sup>/23<br></li>
+								<li><b>Date : </b>janvier 2023 (3 jours)</li>
+								<li><b>Composition de l'équipe : </b>3 développeurs et 2 artistes</li>
+								<li><b>Mots clés : </b>Jeu vidéo, 2D, Arcade, Rythme</li>
+								<li><b>Outils : </b>Unity, C#, GitHub, FMOD, VSCode</li>
+							</ul>
+						</section>
+
+						<hr />
+
+
+						<!-- Jeu -->
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Jouer</h2>
+							</header>
+							<center>
+								<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/7208635/Test build/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="400px" width="640px"></iframe>
+							</center>
+							<p>
+								Jouer avec ←↓→, ou les touches ASD (qwerty) ou QSD (azerty).<br>
+								Gauche est cyan, bas est jaune, droit est magenta.
+							</p>
+							<footer class="major">
+								<ul class="actions special">
+									<li><a href="https://eddiebreeg.itch.io/chromascore" class="button large scrolly">Page itch.io</a></li>
+								</ul>
+							</footer>
+						</section>
+
+						<hr />
+
+						<!-- Mon rôle -->
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Mon rôle</h2>
+							</header>
+							<p>
+								J'ai participé au développement et à la programmation de ce jeu.
+								Voici les principales tâches dont je me suis occupée durant le projet :
+							</p>
+							<h3>Implémentation des menus et des paramètres</h3>
+							<p>
+								Mon rôle a consisté à mettre en place la navigation fluide entre les différents menus et scènes du jeu. J'ai également pris en charge l'implémentation des options, permettant aux joueurs de personnaliser leur expérience. 
+								Dans le cadre de cette tâche, j'ai découvert et utilisé FMOD pour gérer le son du jeu via son API, garantissant ainsi une expérience audio immersive.
+							</p>
+							<ul class="features">
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/chromaScore/accueil.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Menu principal
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class = "imgFrame" src="images/chromaScore/options.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Menu d'options
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class = "imgFrame" src="images/chromaScore/pause.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Menu de pause
+									</p>
+								</li>
+							</ul>
+							<h3>Implémentation des sauvegardes</h3>
+							<p>
+								Afin de renforcer l'aspect arcade de notre jeu, nous avons souhaité inclure un tableau des scores. 
+								Pour ce faire, j'ai mis en place un système de sauvegarde des données, où chaque musique du jeu dispose d'un tableau des 10 meilleurs scores. 
+								Ces tableaux comprennent des informations telles que le nom du joueur, le nombre de points obtenu, et le classement. 
+								En plus des scores, j'ai également assuré la sauvegarde des paramètres sonores, permettant ainsi aux utilisateurs de conserver leurs préférences entre différentes sessions de jeu. 
+								Ce système de sauvegarde a été mis en œuvre à l'aide d'un fichier JSON.
+							</p>
+							<ul class="features">
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/chromaScore/data.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Data sauvegardés
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class = "imgFrame" src="images/chromaScore/score.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Class Score
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class = "imgFrame" src="images/chromaScore/scoreBoard.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Affichage des scores
+									</p>
+								</li>
+							</ul>
+							<h3>Build WebGL</h3>
+							<p>
+								En outre, j'ai pris en charge la création du build WebGL du jeu. 
+								Pendant cette phase, nous avons décidé d'ajouter un écran de chargement spécifique. Cette modification s'est avérée cruciale pour permettre à FMOD de s'initialiser correctement avant le lancement du jeu. 
+								Sans cet écran de chargement, le son du jeu ne se déclenchait qu'après le passage d'un menu à un autre, ce qui aurait entraîné une expérience moins fluide pour les joueurs.
+							</p>
+							<ul class="features">
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/chromaScore/chargement.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class = "legende">
+										Écran de chargement
+									</p>
+								</li>
+							</ul>
+						</section>
+
+						<hr />
+
+						<!-- Outils et langages -->
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Outils et langages utilisés</h2>
+							</header>
+							<ul class="logo">
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/unity.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/c_sharp.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/fmod.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/webGl.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/git.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/vscode.png"></img>
+									</div>
+								</li>
+							</ul>
+						</section>
+
+					</div>
+				</article>
+
+		
+			</div> <!-- Main -->
+			
+			<!-- Footer -->
+			<section class="wrapper style4">
+				<h2 style="text-align: center">Me contacter</h2>
+				<dl>
+					<dt>Adresse :</dt>
+					<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+					<dt>Téléphone :</dt>
+					<dd>(+33) 7 50 26 55 65</dd>
+					<dt>Email :</dt>
+					<dd><a href="mailto:lacombe.a67@gmail.com" target="_blank">lacombe.a67@gmail.com</a></dd>
+				</dl>
+				<ul class="social_footer">
+					<li><a href="https://www.linkedin.com/in/lacombe-alexia/"  target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://lacombea.itch.io/"  target="_blank" class="icon brands fa-itch-io"><span class="label">ItchIo</span></a></li>
+				</ul>
+				<hr />
+				<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+			</section>
+
+		</div> <!-- Wrapper -->
+
+		<div id="modal01" class="modal" onclick="this.style.display='none'">
+			<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<div class="modal-content">
+				<img id="img01" style="max-width:100%">
 			</div>
-			<div id="modal01" class="modal" onclick="this.style.display='none'">
-				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				<div class="modal-content">
-					<img id="img01" style="max-width:100%">
-				</div>
-			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

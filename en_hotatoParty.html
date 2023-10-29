@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HotatoParty</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="en_index.html">Introduction</a></li>
+					<li><a href="en_projets.html" class="active">Projects</a></li>
+					<li><a href="en_index.html#experience_pro">Professional experience</a></li>
+					<li><a href="en_index.html#formation">Education</a></li>
+					<li><a href="fr_hotatoParty.html">English</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Introduction -->
+				<article>
+					<div id="header">
+						<img src="images/bannieres/HotatoParty.png"/>
+					</div>
+				</article>
+
+				<!-- Content -->
+				<article id="projets" class="wrapper style3">
+					<div class="container">
+						<section id="content" class="main special">
+							<header class="major">
+								<h2 style="text-align: center;">About</h2>
+							</header>
+							<p style="text-align:left;">
+								<span class="image right">
+									<img src="images/logo/UQAC.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+								</span>
+							</p>
+							<ul style="text-align: left;">
+								<li>Game created for the UQAC's Fall 2023 WonderJam in 48 hours.</li>
+								<li>Hotato Party is a mobile party game where the hot potato will spice up your evenings.</li>
+								<li><b>Theme: </b>"Hot Potato"</li>
+								<li><b>Overall Ranking: </b>1st/18<br></li>
+								<li><b>Date: </b>October 2023 (2 days)</li>
+								<li><b>Team Composition: </b>2 developers</li>
+								<li><b>Keywords: </b>Video Game, Mobile, Multiplayer, Party Game</li>
+								<li><b>Tools: </b>Unity, C#, Git, Rider, WebGL, Android, iOS</li>
+							</ul>
+						</section>
+					</div>
+
+					<hr />
+
+					<!-- Jeu -->
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Play</h2>
+						</header>
+						<center>
+							<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/8856147/BuildUnicorn/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="820px" width="360px"></iframe>
+						</center>
+						<p>
+							The game was developed to be played on mobile, but here's a WebGL version created during the Jam.
+						</p>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="https://lacombea.itch.io/hotatoparty" class="button large scrolly">itch.io pag</a></li>
+							</ul>
+						</footer>
+					</section>
+
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Summary</h2>
+						</header>
+						<p>
+							Hotato Party is a mobile party game.<br>
+							Hotato Party invites you to memorable parties where friendship is put to the test. 
+							Challenge your friends with hilarious dares and wacky questions. Get ready to laugh and take on unforgettable challenges. Who will survive when everything turns upside down? 
+							It's your turn to play, your turn to win!
+						</p><p>
+							We also had to adhere to 3 styles:<br>
+						</p>
+						<ul class="list-disc">
+							<li><b>Every Player for Themselves:</b> Players should not have direct allied characters. Thus, they must all be against each other.</li>
+							<li><b>Collector:</b> Inclusion of collectibles, rewards available in the game environment.</li>
+							<li><b>My... Friend? Your ally is also your enemy:</b> There should be a sense of camaraderie towards a secondary character, and over time, the player must realize that it brings more negative aspects.</li>
+						</ul>
+						<center>
+							<div style="max-width: 800px">
+								<div class='embed-container'>
+									<embed id="player" src="https://www.youtube.com/embed/1e96d15W8Ls" frameborder="0">
+								</div>
+									<p class = "legende">
+									Gameplay video of the prototype on iOS
+								</p>
+							</div>
+						</center>
+					</section> 
+
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>My Role</h2>
+						</header>
+						<p>
+							I participated in the development and programming of this game. Here are the main tasks I worked on during the project:
+						</p>
+						<h3>Game Loop Implementation</h3>
+						<p>
+							I implemented everything related to the game loop:<br>
+						</p>
+						<ul class="list-disc">
+							<li>Player registration at the start of the game.</li>
+							<li>Transition to the next players.</li>
+							<li>Score management, if the hot potato explodes or if a challenge is successful.</li>
+							<li>Sudden death challenges if there is a tie for first place.</li>
+							<li>Display of the final ranking.</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/HotatoParty/Joueurs.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Player registration
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/d2.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Example of challenges
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/mortSubite.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Sudden death
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/Classement.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Final ranking
+								</p>
+							</li>
+						</ul> 
+						<h3>Bonus Implementation</h3>
+						<p>
+							I implemented the 4 bonuses available in the game. Here's what these bonuses do:<br>
+						</p>
+						<ul class="list-disc">
+							<li><b>Flying Shoe:</b> Pass the challenge.</li>
+							<li><b>Hourglass:</b> Get more time.</li>
+							<li><b>Dice:</b> Have a new challenge.</li>
+							<li><b>Gift:</b> Give the challenge to another player.</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/HotatoParty/bonus.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Bonuses
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/d.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Example of challenges
+								</p>
+							</li>
+						</ul>  
+						<h3>Hot Potato Phrases Implementation</h3>
+						<p>
+							To incorporate our 3rd style, we wanted to make the hot potato a character in the game and add phrases for it to say, which would be initially kind and encouraging and then become demeaning and mean over the course of the game. 
+							Due to the duration of the jam, this was implemented in the player change screen. <br>
+						</p>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/HotatoParty/IAGentille.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Kind Phrase
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/IAMechante.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Mean Phrase
+								</p>
+							</li>
+						</ul>  
+					</section>
+
+					<hr />
+					
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Tools and Languages Used</h2>
+						</header>
+						<ul class="logo">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/unity.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/c_sharp.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/git.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/rider.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/webGl.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/android.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/ios.png"></img>
+								</div>
+							</li>
+						</ul>
+					</section>
+
+				</div>
+			</article>
+
+		</div> <!-- Main -->
+
+		<!-- Footer -->
+		<section class="wrapper style4">
+			<h2 style="text-align: center">Contact Me</h2>
+			<dl>
+				<dt>Address:</dt>
+				<dd>393 East Price Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+				<dt>Phone:</dt>
+				<dd>(+33) 7 50 26 55 65</dd>
+				<dt>Email :</dt>
+				<dd><a href="mailto:lacombe.a67@gmail.com" target="_blank">lacombe.a67@gmail.com</a></dd>
+			</dl>
+			<ul class="social_footer">
+				<li><a href="https://www.linkedin.com/in/lacombe-alexia/"  target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://lacombea.itch.io/"  target="_blank" class="icon brands fa-itch-io"><span class="label">ItchIo</span></a></li>
+			</ul>
+			<hr />
+			<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+		</section>
+
+	</div> <!-- Wrapper -->
+
+	
+	<div id="modal01" class="modal" onclick="this.style.display='none'">
+		<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<div class="modal-content">
+			<img id="img01" style="max-width:100%">
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

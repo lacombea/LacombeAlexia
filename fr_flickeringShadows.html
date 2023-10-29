@@ -15,176 +15,192 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Flickering Shadows</h1>
-					</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="fr_projets.html" class="active">Projets</a></li>
+					<li><a href="index.html#experience_pro">Expériences professionnelles</a></li>
+					<li><a href="index.html#formation">Diplômes et formations</a></li>
+					<li><a href="en_flickeringShadows.html">English</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Main -->
+			<div id="main">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Introduction</a></li>
-							<li><a href="fr_projets.html" class="active">Projets</a></li>
-							<li><a href="fr_diplomes_formations.html">Diplômes et formations</a></li>
-							<li><a href="fr_experience_pro.html">Expériences professionnelles</a></li>
-							<li><a href="en_flickeringShadows.html" style="color:blueviolet; font-weight: bold">English</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Content -->
-							<section id="content" class="main special">
-								<header class="major">
-									<h2 style="text-align: center;">À propos</h2>
-								</header>
-								<p style="text-align:left;">
-									<span class="image right">
-										<img src="images/FlickeringShadows/titre.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
-									</span>
-								</p>
-								<ul style="text-align: left;">
-									<li>Prototype réalisé pour le cours d'Atelier Pratique en JV 2 à l'UQAC.</li>
-									<li>Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.</li>
-									<li><b>Date : </b>depuis mai 2023</li>
-									<li><b>Composition de l'équipe : </b>4 développeurs</li>
-									<li><b>Mots clés : </b>Jeu vidéo, 3D, énigme, IA</li>
-									<li><b>Outils : </b>Unreal, C++, Perforce, Rider</li>
-								</ul>
-								<ul class="actions" style="justify-content: center; display: flex;">
-									<li><a href="documents/FlickeringShadows_One_Pager.pdf" target="_blank" class="button">One Pager</a></li>
-								</ul>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Résumé</h2>
-								</header>
-								<p>
-									Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.<br>
-									Incarnez une jeune fille appartenant au club de science occulte de l'école qui cherche à terminer le rituel pour libérer un puissant démo. 
-									Pour y parvenir, vous devrez traverser un donjon lugubre plongé dans l'obscurité en transportant votre bougie jusqu'au lieu du rituel.
-									Cependant, méfiez vous des créatures de l'ombre qui chercheront à éteindre votre flamme dès que vous aurez le dos tourné !
-								</p>
-								<center>
-									<div style="max-width: 800px">
-										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/i_du5-NRNNc" frameborder="0">
-										</div>
-											<p class = "legende">
-											Trailer du prototype
-										</p>
-									</div>
-								</center>
-							</section> 
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Mon rôle</h2>
-								</header>
-								<p>
-									J'ai participé au développement et à la programmation de ce jeu.
-									Voici les principales tâches dont je me suis occupée durant le projet :
-								</p>
-								<h3>Implémentation de l'intelligence artificielle des monstres</h3>
-								<p>
-									J'ai implémenté les IA du monstres et du boss du jeu ainsi que leur animation. <br>
-									J'ai ainsi utilisé les différents outils d'IA de programmation d'IA : Behavior Tree, BlackBoard, Service, Task, Decorator et EQS. 
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/FlickeringShadows/Animation.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Animation du monstre
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/FlickeringShadows/BehaviorTree.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Behavior Tree du monstre 
-										</p>
-									</li>
-								</ul> 
-							</section> 
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Outils et langages utilisés</h2>
-								</header>
-								<ul class="logo">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unreal.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/cpp.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/perforce.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/rider.png"></img>
-										</div>
-									</li>
-								</ul>
-							</section>
+				<!-- Introduction -->
+				<article>
+					<div id="header">
+						<img src="images/bannieres/FlickeringShadows.png"/>
 					</div>
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<h2 style="text-align: center">Plan :</h2>
-						<dl class="alt" style="text-align: center;">
-							<dd style="margin-left: 0;"><a href="index.html">Introduction</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_projets.html">Projets</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_diplomes_formations.html">Diplômes et formations</a></dd>
-							<dd style="margin-left: 0;"><a href="fr_experience_pro.html">Expériences professionnelles</a></dd>
-						</dl>
-					</section>
-					<section>
-						<h2 style="text-align: center">Contact</h2>
-						<dl class="alt">
-							<dt>Adresse</dt>
-							<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
-							<dt>Téléphone</dt>
-							<dd>(+33) 7 50 26 55 65</dd>
-							<dt>Email</dt>
-							<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
-						</dl>
-						<ul class="icons" style="justify-content: center; display: flex" >
-							<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
+				</article>
+
+				
+				<!-- Content -->
+				<article id="projets" class="wrapper style3">
+					<div class="container">
+					<section id="content" class="main special">
+						<header class="major">
+							<h2 style="text-align: center;">À propos</h2>
+						</header>
+						<ul style="text-align: left;">
+							<li>Prototype réalisé pour le cours d'Atelier Pratique en JV 2 à l'UQAC.</li>
+							<li>Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.</li>
+							<li><b>Date : </b>depuis mai 2023</li>
+							<li><b>Composition de l'équipe : </b>4 développeurs</li>
+							<li><b>Mots clés : </b>Jeu vidéo, 3D, énigme, IA</li>
+							<li><b>Outils : </b>Unreal, C++, Perforce, Rider</li>
+						</ul>
+						<ul class="actions" style="justify-content: center; display: flex;">
+							<li><a href="documents/FlickeringShadows_One_Pager.pdf" target="_blank" class="button large scrolly">One Pager</a></li>
 						</ul>
 					</section>
-					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
 
-			</div>
-			<div id="modal01" class="modal" onclick="this.style.display='none'">
-				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				<div class="modal-content">
-					<img id="img01" style="max-width:100%">
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Résumé</h2>
+						</header>
+						<p>
+							Flickering Shadows est un jeu d'énigme 3D en caméra fixe vue de dessus.<br>
+							Incarnez une jeune fille appartenant au club de science occulte de l'école qui cherche à terminer le rituel pour libérer un puissant démo. 
+							Pour y parvenir, vous devrez traverser un donjon lugubre plongé dans l'obscurité en transportant votre bougie jusqu'au lieu du rituel.
+							Cependant, méfiez vous des créatures de l'ombre qui chercheront à éteindre votre flamme dès que vous aurez le dos tourné !
+						</p>
+						<center>
+							<div style="max-width: 800px">
+								<div class='embed-container'>
+									<embed id="player" src="https://www.youtube.com/embed/i_du5-NRNNc" frameborder="0">
+								</div>
+									<p class = "legende">
+									Trailer du prototype
+								</p>
+							</div>
+						</center>
+					</section> 
+
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Mon rôle</h2>
+						</header>
+						<p>
+							J'ai participé au développement et à la programmation de ce jeu.
+							Voici les principales tâches dont je me suis occupée durant le projet :
+						</p>
+						<h3>Implémentation de l'intelligence artificielle et des animations des monstres</h3>
+						<p>
+							L'un des aspects essentiels de mon rôle dans ce projet a été de concevoir et d'implémenter les intelligences artificielles (IA) pour les monstres et le boss du jeu. 
+							Pour ce faire, j'ai exploité les outils et de techniques de programmation d'IA disponibles sur Unreal, notamment les Behavior Trees, le Blackboard, les Services, les Task, les Decorators, et le système d'Environmental Query System (EQS). 
+							J'ai également utilisé les outils d'animation d'Unreal pour animer les monstres et le boss.
+						</p>
+						<h3>Comportement du Monstre</h3>
+						<p>
+							Pour le monstre, j'ai programmé un comportement où il s'approche de la bougie dès que le joueur s'en éloigne. 
+							Une fois qu'il est assez proche, si le joueur n'est pas revenu à temps, le monstre éteint la bougie et cela libère le boss.
+						</p>
+						<h3>Comportement du Boss</h3>
+						<p>
+							Le boss du jeu, une fois libéré après l'extinction de la bougie, est programmé pour chasser activement le joueur à travers le niveau.
+							Si le joueur est touché par le boss, cela entraîne la fin du jeu, ajoutant ainsi un facteur de stress et de danger au gameplay.
+						</p>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/FlickeringShadows/Animation.png" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Animation du monstre
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/FlickeringShadows/BehaviorTree.png" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Behavior Tree du monstre 
+								</p>
+							</li>
+						</ul> 
+					</section> 
+
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Outils et langages utilisés</h2>
+						</header>
+						<ul class="logo">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/unreal.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/cpp.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/perforce.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/rider.png"></img>
+								</div>
+							</li>
+						</ul>
+					</section>
+
 				</div>
-			</div>
+			</article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	
+		</div> <!-- Main -->
+		
+		<!-- Footer -->
+		<section class="wrapper style4">
+			<h2 style="text-align: center">Me contacter</h2>
+			<dl>
+				<dt>Adresse :</dt>
+				<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+				<dt>Téléphone :</dt>
+				<dd>(+33) 7 50 26 55 65</dd>
+				<dt>Email :</dt>
+				<dd><a href="mailto:lacombe.a67@gmail.com" target="_blank">lacombe.a67@gmail.com</a></dd>
+			</dl>
+			<ul class="social_footer">
+				<li><a href="https://www.linkedin.com/in/lacombe-alexia/"  target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://lacombea.itch.io/"  target="_blank" class="icon brands fa-itch-io"><span class="label">ItchIo</span></a></li>
+			</ul>
+			<hr />
+			<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+		</section>
 
-	</body>
+	</div> <!-- Wrapper -->
+
+	<div id="modal01" class="modal" onclick="this.style.display='none'">
+		<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<div class="modal-content">
+			<img id="img01" style="max-width:100%">
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>

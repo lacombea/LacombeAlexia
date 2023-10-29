@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Hyperaustral</title>
+		<title>HyperAustral</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,340 +15,353 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Hyperaustral</h1>
-					</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="en_index.html">Introduction</a></li>
+					<li><a href="en_projets.html" class="active">Projects</a></li>
+					<li><a href="en_index.html#experience_pro">Professional experience</a></li>
+					<li><a href="en_index.html#formation">Education</a></li>
+					<li><a href="fr_hyperaustral.html">Français</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Main -->
+			<div id="main">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="en_index.html">Introduction</a></li>
-							<li><a href="en_projets.html" class="active">Projects</a></li>
-							<li><a href="en_diplomes_formations.html">Education</a></li>
-							<li><a href="en_experience_pro.html">Work experiences</a></li>
-							<li><a href="fr_hyperaustral.html" style="color:blueviolet; font-weight: bold">Français</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Content -->
-							<section id="content" class="main special">
-								<header class="major">
-									<h2 style="text-align: center;">About</h2>
-								</header>
-								<p style="text-align:left;">
-									<span class="image right">
-										<img src="images/HyperAustral/Icone.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
-									</span>
-								</p>
-								<ul style="text-align: left;">
-									<li>Prototype made for the Practical Workshop course in JV 1 at UQAC.</li>
-									<li>Hyperaustral is a crew management game on board an aircraft.</li>
-									<li><b>Date : </b>from January to April 2023 (15 weeks)</li>
-									<li><b>Team composition : </b>5 developers</li>
-									<li><b>Keywords : </b>Video Game, 2D, Arcade, Management</li>
-									<li><b>Tools : </b>Unity, C#, Perforce, Rider</li>
-								</ul>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Abstract</h2>
-								</header>
-								<p>
-									Hyperaustral is a top-down 2D management game, where the player can see, control and organize everything that takes place in the huge ark plane he has.
-									Over time, he will have to keep his crew alive against the obstacles of the game by ordering his passengers to perform various tasks and solving choices on textual interfaces.
-									If he manages not to lose everything for enough time and story steps, the survivors will be saved and the player will win the ga</p>
-								<center>
-									<div style="max-width: 800px">
-										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/w5U2fBAAP3I" frameborder="0">
-										</div>
-											<p class = "legende">
-												Prototype Trailer
-										</p>
-									</div>
-								</center>
-							</section> 
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Gameplay and mechanics</h2>
-								</header>
-								<h3>Heart of the game</h3>
-								<p>
-									The heart of the game is to assign passengers to tasks in each of the rooms of the ark-plane.
-									This action is performed a significant number of times by the player so must be simple and intuitive to perform.
-									The controls and an adapted UI will allow the player to choose the passengers to be assigned quickly.
-									This is the main mechanic and it allows the player to react to the different events that will punctuate the game.
-								</p>
-								<h3>Gameplay Brick</h3>
-								<h4>Global Resource Management</h4>
-								<p>
-									The player will have to manage several resources in order to finish the game with the most passengers alive.
-									These resources will be global to the plane and will empty during the game but can be produced by the passengers.
-									There's fuel, aircraft health, "raw" food, and cooked food.
-									The player will be able to define his own resource management strategy in order to prepare himself to better react to events.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/ressources.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Global resources
-										</p>
-									</li>
-								</ul>
-								<h4>Management of passenger needs</h4>
-								<p>
-									Each passenger has needs that must be met to keep them alive and avoid overflows.
-									There is morale, health, hunger and fatigue.
-									The lower a passenger's needs gauges are, the less productive and focused they will be in their tasks.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/besoins.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Passenger needs
-										</p>
-									</li>
-								</ul>
-								<h4>Events</h4>
-								<p>
-									During the game, multiple events occur randomly.
-									They can have both positive and negative consequences.
-									For some items, a choice will be given to players to choose their reaction.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/Evenement1.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Choice of events
-										</p>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/Evenement2.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Resolution
-										</p>
-									</li>
-								</ul>
-							</section> 
-							<section id="content" class="main">
-								<header class="major">
-									<h2>My role</h2>
-								</header>
-								<p>
-									I participated in the development and programming of this game.
-									Here are the main tasks I took care of during the project:
-								</p>
-								<h3>Implementation of passenger assignment mechanics</h3>
-								<p>
-									I implemented the mechanics to assign passengers to rooms and activities within the Notos ark-plane. <br>
-									To do this I first designed the structure of the rooms and activities: the rooms are represented by scripts which reference activities as well as their maximum capacity and the activities which are scriptable objects which reference the resources consumed and/or produced with their rate as well as the needs of the passengers satisfied and/or exhausted and their rate.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/Room.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Scripts of a room seen in the editor
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/HyperAustral/Activity.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Scriptable object of an activity
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/HyperAustral/ordre.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Passenger assignment menu
-										</p>
-									</li>
-								</ul>
-								<h3>Implementation of menus and HUD</h3>
-								<p>
-									I implemented the navigation between the different menus and scene of our game as well as the HUD following the ideas designed by one of the artists of the team.
-									It was also necessary to ensure that all the systems of the other players were affected by the gear changes and to adapt them if necessary.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/main.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Main Menu
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/HyperAustral/HUD1.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											HUD with detail of a passenger
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/HyperAustral/HUD3.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											HUD with passenger list
-										</p>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/PropositionHUD.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Original ideas
-										</p>
-									</li>
-								</ul>
-								<h3>Implementation of backups</h3>
-								<p>
-									We wanted to leave open the possibility of being able to save and resume the game later.
-									So I took care of setting up the backup system using a Json file.
-									It was thus necessary to save the passengers, the past events as well as the game time, the rest of the information of the game can thus be deduced.
-									For example, the current chapter could be deducted by the game time.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/Data.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Saved data
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/HyperAustral/PassengerData.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Class PassengerData
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/HyperAustral/PastEventData.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Class PastEventData
-										</p>
-									</li>
-								</ul>
-								<h3>Implementation of time management</h3>
-								<p>
-									An important mechanic of management games being the flow of time: paused, normal or accelerated, I took care of implementing all this system in order to make the player fully in control of his ship.
-								</p><ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/HyperAustral/Temps.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											time management HUD
-										</p>
-									</li>
-								</ul>
-								
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Tools and languages ​​used</h2>
-								</header>
-								<ul class="logo">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unity.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/csharp.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/perforce.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/rider.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/jira.png"></img>
-										</div>
-									</li>
-								</ul>
-							</section>
+				<!-- Introduction -->
+				<article>
+					<div id="header">
+						<img src="images/bannieres/HyperAustral.png"/>
 					</div>
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<h2 style="text-align: center">Plan :</h2>
-						<dl class="alt" style="text-align: center;">
-							<dd style="margin-left: 0;"><a href="en_index.html">Introduction</a></dd>
-							<dd style="margin-left: 0;"><a href="en_projets.html">Projets</a></dd>
-							<dd style="margin-left: 0;"><a href="en_diplomes_formations.html">Education</a></dd>
-							<dd style="margin-left: 0;"><a href="en_experience_pro.html">Work experiences</a></dd>
-						</dl>
-					</section>
-					<section>
-						<h2 style="text-align: center">Contact</h2>
-						<dl class="alt">
-							<dt>Address</dt>
-							<dd>393 Price Est Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
-							<dt>Number</dt>
-							<dd>(+33) 7 50 26 55 65</dd>
-							<dt>Email</dt>
-							<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
-						</dl>
-						<ul class="icons" style="justify-content: center; display: flex" >
-							<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
-						</ul>
-					</section>
-					<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
+				</article>
 
-			</div>
-			<div id="modal01" class="modal" onclick="this.style.display='none'">
-				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				<div class="modal-content">
-					<img id="img01" style="max-width:100%">
+				<!-- Introduction -->
+				<article id="projects" class="wrapper style3">
+					<div class="container">
+				
+						<section id="content" class="main special">
+							<header class="major">
+								<h2 style="text-align: center;">About</h2>
+							</header>
+							<ul style="text-align: left;">
+								<li>Prototype developed for the Practical Workshop in Game Development 1 at UQAC.</li>
+								<li>Hyperaustral is a crew management game set on an aircraft.</li>
+								<li><b>Date:</b> January to April 2023 (15 weeks)</li>
+								<li><b>Team Composition:</b> 5 developers</li>
+								<li><b>Keywords:</b> Video game, 2D, Arcade, Management</li>
+								<li><b>Tools:</b> Unity, C#, Perforce, Rider</li>
+							</ul>
+						</section>
+				
+						<hr />
+				
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Summary</h2>
+							</header>
+							<p>
+								Hyperaustral is a 2D top-down management game where the player can see, control, and organize everything that happens inside their massive ark-like aircraft.
+								Over time, the player must keep their crew alive by addressing the game's challenges, giving passengers various tasks, and making choices through text-based interfaces.
+								If they can avoid losing everything for a sufficient amount of time and through various narrative stages, the survivors will be saved, and the player wins the game.
+							</p>
+							<center>
+								<div style="max-width: 800px">
+									<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/w5U2fBAAP3I" frameborder="0">
+									</div>
+									<p class="caption">
+										Prototype Trailer
+									</p>
+								</div>
+							</center>
+						</section>
+				
+						<hr/>
+				
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Gameplay and Mechanics</h2>
+							</header>
+							<h3>Core of the Game</h3>
+							<p>
+								The core of the game is to assign passengers to tasks in each of the airplane-ark's rooms. 
+								This action is performed numerous times by the player, so it must be simple and intuitive to carry out. 
+								Appropriate controls and UI will allow the player to quickly choose passengers to assign. 
+								This is the main mechanic and it enables the player to react to the various events that will shape the game.
+							</p>
+							<h3>Gameplay Elements</h3>
+							<h4>Global Resource Management</h4>
+							<p>
+								The player will need to manage various resources to complete the game with the most passengers alive. 
+								These resources are global to the airplane and deplete during the game but can be produced by passengers. 
+								There are fuel, airplane health, raw food, and cooked food resources. 
+								The player can define their own resource management strategy to better respond to events.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/ressources.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Global Resources
+									</p>
+								</li>
+							</ul>
+							<h4>Passenger Needs Management</h4>
+							<p>
+								Each passenger has needs that must be satisfied to keep them alive and prevent outbursts. 
+								These needs include morale, health, hunger, and fatigue. 
+								The lower a passenger's need meters, the less productive and focused they will be on their tasks.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/besoins.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Passenger Needs
+									</p>
+								</li>
+							</ul>
+							<h4>Events</h4>
+							<p>
+								Throughout the game, multiple events occur randomly. 
+								They can have both positive and negative consequences. 
+								For some elements, players will be given a choice to react as they see fit.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/Evenement1.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Choice Events
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/Evenement2.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Resolution
+									</p>
+								</li>
+							</ul>
+						</section>
+						
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>My Role</h2>
+							</header>
+							<p>
+								I was involved in the development and programming of this game. Here are the main tasks I worked on during the project:
+							</p>
+							<h3>Implementation of Passenger Assignment Mechanics</h3>
+							<p>
+								My primary role was to implement the mechanics for assigning passengers to different rooms and activities inside the Notos airplane-ark. 
+								To do this, I began by designing the structure of the rooms and activities. 
+								Rooms were represented by scripts defining the activities they contained, their maximum capacity, and other essential features. Activities, on the other hand, were implemented as scriptable objects describing the consumed and/or produced resources, fulfilled and/or depleted passenger needs, and their respective rates.<br>
+								This mechanic played a central role in the game's management dynamics.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/Room.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Room Scripts in the Editor
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/Activity.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Scriptable Object for an Activity
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/ordre.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Passenger Assignment Menu
+									</p>
+								</li>
+							</ul>
+							<h3>Implementation of Menus and HUD</h3>
+							<p>
+								I implemented the navigation between the different menus and scenes in our game, as well as the HUD, following the ideas conceived by one of the artists on the team.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/main.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Main Menu
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/HUD1.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										HUD with Passenger Details
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/HUD3.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										HUD with Passenger List
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/PropositionHUD.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Original Ideas
+									</p>
+								</li>
+							</ul>
+							<h3>Implementation of Save Systems</h3>
+							<p>
+								The ability to save and resume a game later was a key feature we wanted to offer players. 
+								To achieve this, I designed and implemented a save system based on a JSON file. 
+								This save included essential data, such as passenger information, previously experienced events, and playtime. 
+								Other game parameters could be derived from this data; for example, the current chapter could be determined based on playtime. 
+								This feature enhanced the accessibility and immersion of the game.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/Data.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Saved Data
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/PassengerData.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										PassengerData Class
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/PastEventData.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										PastEventData Class
+									</p>
+								</li>
+							</ul>
+							<h3>Implementation of Time Management</h3>
+							<p>
+								Time management is a crucial component of management games, and I was responsible for implementing a system that allowed players to control the flow of time. 
+								This included managing game modes such as pause, normal time, and fast-forward, providing a flexible gaming experience where players had full control over the progression of the Notos airplane-ark. 
+								This mechanic added a strategic dimension to the gaming experience, giving players a sense of mastery and decision-making within the world of the Notos airplane-ark.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/HyperAustral/Temps.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="caption">
+										Time Management HUD
+									</p>
+								</li>
+							</ul>
+						</section>
+						
+
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Tools and Languages Used</h2>
+							</header>
+							<ul class="logo">
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/unity.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/c_sharp.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/perforce.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/rider.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/jira.png"></img>
+									</div>
+								</li>
+							</ul>
+						</section>
+
 				</div>
-			</div>
+			</article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</div> <!-- Main -->
+		
+		<!-- Footer -->
+		<section class="wrapper style4">
+			<h2 style="text-align: center">Contact Me</h2>
+			<dl>
+				<dt>Address:</dt>
+				<dd>393 East Price Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+				<dt>Phone:</dt>
+				<dd>(+33) 7 50 26 55 65</dd>
+				<dt>Email :</dt>
+				<dd><a href="mailto:lacombe.a67@gmail.com" target="_blank">lacombe.a67@gmail.com</a></dd>
+			</dl>
+			<ul class="social_footer">
+				<li><a href="https://www.linkedin.com/in/lacombe-alexia/"  target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://lacombea.itch.io/"  target="_blank" class="icon brands fa-itch-io"><span class="label">ItchIo</span></a></li>
+			</ul>
+			<hr />
+			<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+		</section>
 
-	</body>
+	</div> <!-- Wrapper -->
+
+	<div id="modal01" class="modal" onclick="this.style.display='none'">
+		<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<div class="modal-content">
+			<img id="img01" style="max-width:100%">
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>

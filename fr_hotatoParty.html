@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HotatoParty</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="fr_projets.html" class="active">Projets</a></li>
+					<li><a href="index.html#experience_pro">Expériences professionnelles</a></li>
+					<li><a href="index.html#formation">Diplômes et formations</a></li>
+					<li><a href="en_hotatoParty.html">English</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Introduction -->
+				<article>
+					<div id="header">
+						<img src="images/bannieres/HotatoParty.png"/>
+					</div>
+				</article>
+
+				<!-- Content -->
+				<article id="projets" class="wrapper style3">
+					<div class="container">
+					<section id="content" class="main special">
+						<header class="major">
+							<h2 style="text-align: center;">À propos</h2>
+						</header>
+						<p style="text-align:left;">
+							<span class="image right">
+								<img src="images/logo/UQAC.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
+							</span>
+						</p>
+						<ul style="text-align: left;">
+							<li>Jeu réalisé pour la WonderJam d'automne 2023 de l'UQAC en 48 heures.</li>
+							<li>Hotato Party est party game sur mobile où la patate animera vos soirées.</li>
+							<li><b>Thème : </b>"Hot Potato</li>
+							<li><b>Classement général : </b>1<sup>er</sup>/18<br></li>
+							<li><b>Date : </b>octobre 2023 (2 jours)</li>
+							<li><b>Composition de l'équipe : </b>2 développeurs</li>
+							<li><b>Mots clés : </b>Jeu vidéo, Mobile, Multijoueur, PartyGame</li>
+							<li><b>Outils : </b>Unity, C#, Git, Rider, WebGl, Android, IOS</li>
+						</ul>
+					</section>
+
+					<hr />
+
+					<!-- Jeu -->
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Jouer</h2>
+						</header>
+						<center>
+							<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://v6p9d9t4.ssl.hwcdn.net/html/8856147/BuildUnicorn/index.html" style="border:0px #000000 none;" name="Pong: Star Wars Remix" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="200px" height="820px" width="360px"></iframe>
+						</center>
+						<p>
+							Le jeu a été développé pour être joué sur mobile, mais voici une version webGl réalisé durant la Jam.
+						</p>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="https://lacombea.itch.io/hotatoparty" class="button large scrolly">Page itch.io</a></li>
+							</ul>
+						</footer>
+					</section>
+
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Résumé</h2>
+						</header>
+						<p>
+							Hotato Party est un jeu mobile de soirées. <br>
+							Hotato Party vous invite à des soirées mémorables, où l'amitié est mise à l'épreuve. 
+							Affrontez vos amis avec des défis hilarants et des questions délirantes. Soyez prêts à rire et à relever des défis inoubliables. Qui restera en lice lorsque tout basculera ? 
+							C'est à vous de jouer, à vous de gagner !
+						</p><p>
+							Nous avions également 3 styles à respecter :<br>
+						</p>
+						<ul class="list-disc">
+							<li><b>Chacun pour soi :</b> Les joueurs ne doivent pas avoir de personnage allié direct. Ainsi, ils doivent tous être contre eux-mêmes.</li>
+							<li><b>Collectionneur : </b>Inclusion de collectibles, des récompenses disponibles dans l'environnement du jeu.</li>
+							<li><b>Mon... Ami ? Ton allié est aussi ton ennemi : </b>Il dot y avoir un sentiment de camaraderie envers un personnage secondaire et avec le temps le joueur doit se rendre compte qu'il apporte plus de négatif.</li>
+						</ul>
+						<center>
+							<div style="max-width: 800px">
+								<div class='embed-container'>
+									<embed id="player" src="https://www.youtube.com/embed/1e96d15W8Ls" frameborder="0">
+								</div>
+									<p class = "legende">
+									vidéo gameplay du prototype sur IOS
+								</p>
+							</div>
+						</center>
+					</section> 
+
+					<hr />
+
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Mon rôle</h2>
+						</header>
+						<p>
+							J'ai participé au développement et à la programmation de ce jeu.
+							Voici les principales tâches dont je me suis occupée durant le projet :
+						</p>
+						<h3>Implémentation de la boucle de jeu</h3>
+						<p>
+							J'ai implémenté tous ce qui concerne la boucle de jeu :<br>
+						</p>
+						<ul class="list-disc">
+							<li>Inscription des joueurs au début de partie.</li>
+							<li>Passage aux joueurs suivant.</li>
+							<li>Gestion des scores, si la patate chaude explose ou si un défis est réussis.</li>
+							<li>Défis en mort subite si il y a égalité pour la première place.</li>
+							<li>Affichage du classement final.</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/HotatoParty/Joueurs.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Inscription des joueurs
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/d2.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Exemple de défis
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/mortSubite.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Mort subite
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/Classement.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Classement final
+								</p>
+							</li>
+						</ul> 
+						<h3>Implémentation des bonus</h3>
+						<p>
+							J'ai implémente les 4 bonus disponible dans le jeu, voici ce que font ces bonus :<br>
+						</p>
+						<ul class="list-disc">
+							<li><b>Chaussure volante :</b> passage du défis</li>
+							<li><b>Sablier :</b> obtenir plus de temps</li>
+							<li><b>Dès :</b> avoir un nouveau défis</li>
+							<li><b>Cadeau :</b> donner le défis à un autre joueur</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/HotatoParty/bonus.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Bonus
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/d.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Exemple de défis
+								</p>
+							</li>
+						</ul>  
+						<h3>Implémentation des phrases de la Patate</h3>
+						<p>
+							Pour mettre en place notre 3e style, nous voulions faire de la patate un personnage du jeu et lui ajouter des phrases à dire, qui serait d'abord gentille et encourageante puis au fil de la partie deviendrait rabaissante et méchante. 
+							Au vu de la durée de la jam, ceci a été mis en place dans l'écran de changement de joueur. <br>
+						</p>
+						<ul class="features">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/HotatoParty/IAGentille.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Phrase gentille
+								</p>
+							</li>
+							<li>
+								<div class="frame">
+									<img class = "imgFrame" src="images/HotatoParty/IAMechante.jpg" style="cursor:pointer" onclick="onClick(this)"></img>
+								</div>
+								<p class = "legende">
+									Phrase méchante
+								</p>
+							</li>
+						</ul>  
+					</section>
+
+					<hr />
+					
+					<section id="content" class="main">
+						<header class="major">
+							<h2>Outils et langages utilisés</h2>
+						</header>
+						<ul class="logo">
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/unity.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/c_sharp.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/git.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/rider.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/webGl.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/android.png"></img>
+								</div>
+							</li>
+							<li>
+								<div class = "frame">
+									<img class = "imgFrame" src="images/Icone/ios.png"></img>
+								</div>
+							</li>
+						</ul>
+					</section>
+
+				</div>
+			</article>
+
+		</div> <!-- Main -->
+
+		<!-- Footer -->
+		<section class="wrapper style4">
+			<h2 style="text-align: center">Me contacter</h2>
+			<dl>
+				<dt>Adresse :</dt>
+				<dd>393 rue Price Est &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+				<dt>Téléphone :</dt>
+				<dd>(+33) 7 50 26 55 65</dd>
+				<dt>Email :</dt>
+				<dd><a href="mailto:lacombe.a67@gmail.com" target="_blank">lacombe.a67@gmail.com</a></dd>
+			</dl>
+			<ul class="social_footer">
+				<li><a href="https://www.linkedin.com/in/lacombe-alexia/"  target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://lacombea.itch.io/"  target="_blank" class="icon brands fa-itch-io"><span class="label">ItchIo</span></a></li>
+			</ul>
+			<hr />
+			<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+		</section>
+
+	</div> <!-- Wrapper -->
+
+	
+	<div id="modal01" class="modal" onclick="this.style.display='none'">
+		<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<div class="modal-content">
+			<img id="img01" style="max-width:100%">
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

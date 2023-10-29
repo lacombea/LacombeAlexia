@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Development of VR training</title>
+		<title>Formation RV</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,367 +15,360 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Development of VR training</h1>
-					</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="en_index.html">Introduction</a></li>
+					<li><a href="en_projets.html" class="active">Projects</a></li>
+					<li><a href="en_index.html#experience_pro">Professional experience</a></li>
+					<li><a href="en_index.html#formation">Education</a></li>
+					<li><a href="fr_formation_RV.html">English</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Main -->
+			<div id="main">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="en_index.html">Introduction</a></li>
-							<li><a href="en_projets.html" class="active">Projects</a></li>
-							<li><a href="en_diplomes_formations.html">Education</a></li>
-							<li><a href="en_experience_pro.html">Work experiences</a></li>
-							<li><a href="fr_formation_RV.html" style="color:blueviolet; font-weight: bold">Français</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Content -->
-							<section id="content" class="main special">
-								<header class="major">
-									<h2 style="text-align: center;">About</h2>
-								</header>
-								<p style="text-align:left;">
-									<span class="image right">
-										<img src="images/logo/emanrisk.png" alt="" style="max-height: 150px;cursor:pointer" onclick="onClick(this)"/>
-									</span>
-								</p>
-								<ul style="text-align: left;">
-									<li>Virtual reality assistant engineer internship</li>
-									<li>Implementation of a virtual reality training for traceability and hygiene protocols.</li>
-									<li><b>Date : </b>from February to June 2022 (20 weeks)</li>
-									<li><b>Company : </b>e-ManRisk subsidiary of the E.Leclerc group</li>
-									<li><b>Keywords : </b>Virtual Reality, Training, Oculus</li>
-									<li><b>Tools : </b>Unity, C#, Modelio, Postman, GitHub, VSCode</li>
-								</ul>
-								<ul class="actions" style="justify-content: center; display: flex;">
-									<li><a href="documents/Rapport_Stage.pdf" target="_blank" class="button">Internship report</a></li>
-								</ul>
-								<p style="align-content:center;">Sorry document is in french</p>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Abstract</h2>
-								</header>
-								<p style="margin: 0 0 0.5em 0;">
-									The objective of this internship was the implementation of a virtual reality and/or augmented reality environment allowing the implementation of traceability and hygiene protocols for training.<br>
-									I thus worked around 3 parts :
-								</p>
-								<ul>
-									<li>The modeling of a virtual reality environment on Unity, especially on the animation part of the objects but also the interaction between the objects and the participant.</li>
-									<li>The development and implementation of a scenario for this training focused on the procedure of cooking, rapid cooling and storage of a food using Mascaret, a system developed by the CERV.</li>
-									<li>The integration of the software developed by the company e-ManRisk within the 3D environment and the possibility of interacting with it using the node library: Puppeteer.</li>
-								</ul>
-								<p>For this project, I used an oculus quest.</p>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Preliminary design phase</h2>
-								</header>
-								<p>
-									A first part of the project was to study the expectations and discuss with the company's business team. 
-									The traceability and hygiene protocol that would be implemented for this training had been chosen beforehand. 
-									It is a procedure of cooking, fast cooling and storage of a food that is done in the laboratory of the stores.
-									<br>
-									<br>
-									It was therefore necessary to decide with the business team what <b>type of training</b> was going to be done, as this affects the assistance given to the learner and his or her freedom to act in the 3D environment.
-									<br>
-									The final choice was to carry out an <b>initial training</b> : the objects to be used will be highlighted and the procedure will be broken down into many simple actions so that the learner can assimilate in a more effective way the procedures to which one wishes to train him.
-								</p>
-								<span>
-										<img src="images/eManRisk/formationInitiale.png" alt="" style="max-height: 150px; max-width: 100%; width: auto; cursor:pointer" onclick="onClick(this)"/>
-										<figcaption class = "legende">Explanation of a temperature reading in an initial training</figcaption>
-								</span>
-								<p>
-									<br>
-									Afterwards, I studied different solutions for the implementation of training in Virtual Reality.
-									Having the opportunity for this project to work in collaboration with the <b>CERV</b> (European Center for Virtual Reality) at Brest, I was able to use the system they develop : <b>Mascaret</b>. 
-									It is a system allowing to link UML diagrams (in particular class and activity diagrams) and a virtual reality environment modeled on a 3D game engine such as Unity, in order to realize training.
-								</p>
-								<center>
-									<span>
-										<img src="images/eManRisk/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto; cursor:pointer" onclick="onClick(this)"/>
-										<figcaption class = "legende">Example of a sequence of actions for Mascaret</figcaption>
-									</span>
-									<div style="max-width: 600px">
-										<div class='embed-container'>
-										<embed id="player" src="https://www.youtube.com/embed/qC7tNvQuzWw" frameborder="0">
-										</div>
-										<p class = "legende">
-											Sequence of 3 actions with highlighting of objects and indications
-										</p>
-									</div>									
-								</center>
-							</section>
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Time management</h2>
-								</header>
-								<p>
-									The procedure that the learner is brought to realize during this training can be rather long, there is the time of cooking but also the time of cooling which can last until <b>two hours</b>.
-									In the real world, an operator would have to perform other procedures or perform it with other foods while the food is cooking or cooling, in the case of training there is no point in overloading the learner with other foods or multiple procedures, so a way had to be found to make the time flow within the virtual environment without the cooking or cooling seeming immediate. 
-									Two solutions to <b>spatialize the environment in time</b> have been implemented: the use of clocks and the use of fade screens.
-								</p>
-								<h3>Clocks</h3>
-								<p>
-									A clock has been placed in the laboratory to indicate the time to the learner. 
-									Throughout the course, <b> time passes at a normal pace</b> and is displayed on the clock. 
-									A second clock is placed above the handwashing station to indicate the time required for the learner to wash his or her hands and to enforce the fact that this step must take more than 30 seconds.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/eManRisk/horloge.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Laboratory clock
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/eManRisk/horloge 2.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											handwashing station clock
-										</p>
-									</li>
-								</ul>
-								<h3>Fade screens</h3>
-								<p>
-									The use of fade screen to make time pass is a very common process in games and cartoons. I decided to use it when an action lasts for too long, for example when the learner puts the chicken in the oven and it has to cook, a fade screen with the time passing is displayed for a few seconds. 
-									This time also runs on the main clock so that it remains <b>coherent</b>.
-								</p>
-								<center>
-									<div style="max-width: 600px">
-										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/lBnoURxy3wg " frameborder="0">
-										</div>
-										<p class = "legende">
-											Fade screen to pass the cooking time
-										</p>
-									</div>
-									
-								</center>
-							</section>
-
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Management of food contamination</h2>
-								</header>
-								
-								<p>
-									As this training is mainly concerned with food hygiene and the aim of this procedure is to find out if a food has been potentially contaminated by bacteria, it is important that food contamination is at the heart of our virtual reality, so we will make it visible so that the learner can better perceive it and confront him with the case where the food is contaminated or not.
-								</p>
-								<h3>
-									Visualization of bacteria
-								</h3>
-								<p>
-									In order for the learner to better understand the dangers of bacteria, a different aspect will be applied to the food when it is contaminated and to the hands when they are dirty.
-									This visualization makes food contamination more explicit and is more fun and memorable than simply saying that the hands are dirty or the food is contaminated.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/eManRisk/contamine.png" style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Uncontaminated/contaminated food
-										</p>
-									</li>
-								</ul>
-								<h3>
-									The impact of bacteria in training
-								</h3>
-								<p>
-									In reality, operators do not know if a food is contaminated or not until they reach the end of the rapid cooling procedure, so the choice was made to do the same in this training: a random value is assigned to the food at the start of the simulation in order to determine if it is contaminated or not.
-									The learner performs temperature measurements of the food when the cooling procedure is complete that will determine whether or not the food should be stored. <br><Br>
-										However, food contamination is also caused by a bad respect of procedures, the learner starts his training with dirty hands as it would be the case in real life, so if he touches a food before having properly washed his hands or if a food touches the ground it will become contaminated, a few seconds later a screen telling the participant that the food is contaminated and that he must start again will be displayed.
-								</p>
-								<center>
-									<div style="max-width: 600px">
-										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/CJZet4_laIg" frameborder="0">
-										</div>
-										<p class = "legende">
-											Contamination by touching the food
-										</p>
-									</div>
-									
-								</center>
-							</section>
-
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Implementation of the e-ManRisk software in the virtual environment</h2>
-								</header>
-								<p>
-									The software developed by e-ManRisk makes it possible to record the results of quality controls performed in laboratories. 
-									The software is used on <b>tablets</b> because that is what is most practical in this context. 
-									An important element of this project was to be able to do the same in virtual reality : to have a tablet that would allow to take in hand the software and to record the control realized during the training.<br>
-									Unity does not offer a web browser that can be integrated into the 3D environment, there is no free tool that allows this and creating this type of tool would have been too much work, we had to find another solution to have access to the e-ManRisk application. 
-									The solution will be to use the Puppeteer library.
-								</p>
-								<h3>The Puppeteer library</h3>
-								<p>
-									The Puppeteer library allows you to interact with a Chrome web browser, via a Node server, as you would on a computer, but in an automated way.
-									You can simulate mouse clicks or keyboard presses, but also extract pdf files or take screenshots of pages.<br>
-									This is how the e-ManRisk web application will be navigated: a screenshot of the current page will be taken and displayed on the table in the virtual environment, the user should be able to click on the site and the displayed page should change or elements should appear. 
-									We also want the text fields to be fillable, so we need to be able to model a <b>keyboard</b> for the tablet.
-								</p>
-								<h3>The tablet in the 3D environment</h3>
-								<p>
-									For the sake of precision in interacting with the tablet, there will in fact be two tablets in the virtual world: a first one will be placed in the laboratory at <b>real size</b> that the user will have to grasp in order to be transferred in front of a larger tablet with which he will be able to <b>interact with a pointer</b> and on which a keyboard will be displayed if necessary.
-								</p>
-								<ul class="features">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/eManRisk/tabletteLabo.png"  style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Tablet in the laboratory
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/eManRisk/tabletteInterractive.png"  style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Interactive tablet with a pointer
-										</p>
-									</li>
-									<li>
-										<div class="frame">
-											<img class = "imgFrame" src="images/eManRisk/tabletteClavier.png"  style="cursor:pointer" onclick="onClick(this)"></img>
-										</div>
-										<p class = "legende">
-											Keyboard display
-										</p>
-									</li>
-								</ul>
-								<center>
-									<div style="max-width: 600px">
-										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/SLaZbenbcuM" frameborder="0">
-										</div>
-											<p class = "legende">
-												Transfer between tablets
-										</p>
-									</div>
-									<div style="max-width: 600px">
-										<div class='embed-container'>
-											<embed id="player" src="https://www.youtube.com/embed/l4dAgofKtuk" frameborder="0">
-										</div>
-										<p class = "legende">
-											Filling out a form
-										</p>
-									</div>
-									
-								</center>
-							</section>
-
-							<section id="content" class="main">
-								<header class="major">
-									<h2>Tools and languages used</h2>
-								</header>
-								<ul class="logo">
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/unity.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/csharp.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/steamvr.jpg"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/modelio.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/postman.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/typescript.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/github.png"></img>
-										</div>
-									</li>
-									<li>
-										<div class = "frame">
-											<img class = "imgFrame" src="images/logo/vscode.png"></img>
-										</div>
-									</li>
-
-								</ul>
-							</section>
-
+				<!-- Introduction -->
+				<article>
+					<div id="header">
+						<img src="images/bannieres/eManRisk.png"/>
 					</div>
+				</article>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2 style="text-align: center">Plan :</h2>
-							<dl class="alt" style="text-align: center;">
-								<dd style="margin-left: 0;"><a href="en_index.html">Introduction</a></dd>
-								<dd style="margin-left: 0;"><a href="en_projets.html">Projets</a></dd>
-								<dd style="margin-left: 0;"><a href="en_diplomes_formations.html">Education</a></dd>
-								<dd style="margin-left: 0;"><a href="en_experience_pro.html">Work experiences</a></dd>
-							</dl>
+
+				<!-- Introduction -->
+				<article id="projets" class="wrapper style3">
+					<div class="container">
+
+					<!-- Content -->
+					<section id="content" class="main special">
+						<header class="major">
+							<h2 style="text-align: center;">About</h2>
+						</header>
+						<ul style="text-align: left;">
+							<li>Internship as a Virtual Reality Engineer Assistant</li>
+							<li>Implementation of virtual reality training for traceability and hygiene protocols</li>
+							<li><b>Date: </b>February to June 2022 (20 weeks)</li>
+							<li><b>Company: </b>e-ManRisk, a subsidiary of the E.Leclerc Group</li>
+							<li><b>Keywords: </b>Virtual Reality, Training, Oculus</li>
+							<li><b>Main Tools: </b>Unity, C#, Modelio, Postman, GitHub, VSCode</li>
+						</ul>
+						<ul class="actions" style="justify-content: center; display: flex;">
+							<li><a href="documents/Rapport_Stage.pdf" target="_blank" class="button large scrolly">Internship Report (French)</a></li>
+						</ul>
+					</section>
+					
+
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Summary</h2>
+							</header>
+							<p style="margin: 0 0 0.5em 0;">The objective of this internship was the implementation of a virtual reality and/or augmented reality environment to facilitate the execution of traceability and hygiene protocols.<br>
+								I worked on three main aspects during this internship:
+							</p>
+							<ul class="list-disc">
+								<li>Modeling a virtual reality environment in Unity, focusing on object animations and interactions between objects and the participant.</li>
+								<li>Developing and implementing a training scenario centered around the cooking, rapid cooling, and storage procedure of a food product using Mascaret, a system developed by CERV.</li>
+								<li>Integrating e-ManRisk's software into the 3D environment and enabling interactions using the Puppeteer library.</li>
+							</ul>
+							<p>For this project, I used an Oculus Quest.</p>
 						</section>
-						<section>
-							<h2 style="text-align: center">Contact</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>393 Price Est Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
-								<dt>Number</dt>
-								<dd>(+33) 7 50 26 55 65</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:lacombe.a67@gmail.com">lacombe.a67@gmail.com</a></dd>
-							</dl>
-							<ul class="icons" style="justify-content: center; display: flex" >
-								<li><a href="https://github.com/lacombea" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/lacombe-alexia/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-								<li><a href="https://lacombea.itch.io/" class="icon brands fa-itch-io alt"><span class="label">Linkedin</span></a></li>
+						
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Preliminary Design Phase</h2>
+							</header>
+							<p>
+								The initial part of the project involved understanding the requirements and discussions with the business team of the company. 
+								The traceability and hygiene protocol to be implemented for this training had been chosen in advance. 
+								It was a procedure for cooking, rapid cooling, and storing food, typically performed in the store's laboratories.
+								<br>
+								<br>
+								It was necessary to decide with the business team what <b>type of training</b> we were going to provide, as this would influence the support given to the learner and their freedom to interact in the 3D environment.
+								<br>
+								The final decision was to create an <b>initial training</b>: the objects to be used would be highlighted, and the procedure would be broken down into numerous simple actions, allowing the learner to more effectively assimilate the procedures they were being trained on.
+							</p>
+							<span>
+								<img src="images/eManRisk/formationInitiale.png" alt="" style="max-height: 150px; max-width: 100%; width: auto; cursor:pointer" onclick="onClick(this)"/>
+								<figcaption class="legende">Explanation of a temperature measurement in an initial training</figcaption>
+							</span>
+							<p>
+								<br>
+								Subsequently, I explored different solutions for implementing the training in Virtual Reality. 
+								For this project, I had the opportunity to collaborate with the <b>CERV</b> (European Center for Virtual Reality) in Brest, and I was able to use the system they were developing: <b>Mascaret</b>. 
+								It's a system that links UML diagrams (including class and activity diagrams) with a virtual reality environment modeled in a 3D game engine like Unity to conduct training.
+							</p>
+							<center>
+								<span>
+									<img src="images/eManRisk/SéquenceAction.png" alt="" style="max-height: 500px; max-width: 100%; width: auto; cursor:pointer" onclick="onClick(this)"/>
+									<figcaption class="legende">Example of an action sequence for Mascaret</figcaption>
+								</span>
+								<div style="max-width: 600px">
+									<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/qC7tNvQuzWw" frameborder="0">
+									</div>
+									<p class="legende">
+										Sequence of 3 actions with object highlights and instructions
+									</p>
+								</div>
+							</center>
+						</section>
+						
+
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Time Management</h2>
+							</header>
+							<p>
+								The procedure that the learner is required to perform during this training can be quite lengthy, involving both cooking time and cooling time, which can last up to <b>two hours</b>. 
+								In a real-world setting, an operator might perform other tasks or work with different foods while the food is cooking or cooling. However, in a training scenario, overloading the learner with additional items or multiple procedures would not be productive. Therefore, a method was needed to make time pass in the virtual environment without making cooking or cooling appear instantaneous. Two solutions were implemented to <b>dimensionalize time within the environment</b>: the use of clocks and the use of black screens.
+							</p>
+							<h3>Clocks</h3>
+							<p>
+								A clock was placed in the environment to indicate the time to the learner. Throughout the training, <b>time progresses at a normal pace</b> and is displayed on the clock. A second clock is positioned above the handwashing station to indicate the time the learner spends washing their hands and to ensure that this step takes more than 30 seconds.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/eManRisk/horloge.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="legende">
+										Laboratory Clock
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/eManRisk/horloge 2.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="legende">
+										Handwashing Station Clock
+									</p>
+								</li>
+							</ul>
+							<h3>Black Screens</h3>
+							<p>
+								The use of black screens to advance time is a widely used technique in both games and animations. I decided to use it when an action takes too long to complete. For example, when the learner places the chicken in the oven and it needs to cook, a black screen with the passage of time is displayed for a few seconds. This time also advances on the main clock to ensure <b>consistency</b>.
+							</p>
+							<center>
+								<div style="max-width: 600px">
+									<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/lBnoURxy3wg " frameborder="0">
+									</div>
+									<p class="legende">
+										Black Screen to Pass Cooking Time
+									</p>
+								</div>
+							</center>
+						</section>
+						
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Food Contamination Management</h2>
+							</header>
+							<p>
+								This training primarily focuses on food hygiene, and the procedure aims to determine if food has potentially been contaminated by bacteria. It's important that food contamination is at the core of our virtual reality, making it visible for the learner to better perceive and confront whether the food is contaminated or not.
+							</p>
+							<h3>Visualization of Bacteria</h3>
+							<p>
+								To help the learner better understand the dangers of bacteria, we will apply a <b>different appearance to the food when it's contaminated</b>, as well as to the hands when they are dirty. This visualization makes food contamination more explicit and is more engaging and memorable than just stating that hands are dirty or that the food is contaminated.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/eManRisk/contamine.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="legende">
+										Non-contaminated/Contaminated Food
+									</p>
+								</li>
+							</ul>
+							<h3>Impact of Bacteria in the Training</h3>
+							<p>
+								In reality, operators do not know if food is contaminated or not until they reach the end of the rapid cooling procedure. Therefore, the choice was made to do the same in this training: a random value is assigned to the food at the start of the simulation to determine if it's contaminated or not.
+								The learner takes temperature measurements of the food when the rapid cooling procedure is complete, which will determine whether the food should be stored or not. <br><br>
+								However, food contamination can also result from a failure to follow proper procedures. The learner begins the training with dirty hands, just as would happen in real life. If they touch food before washing their hands properly or if food touches the floor, it becomes contaminated. A few seconds later, a screen will notify the learner that the food is contaminated, and they must start over.
+							</p>
+							<center>
+								<div style="max-width: 600px">
+									<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/CJZet4_laIg" frameborder="0">
+									</div>
+									<p class="legende">
+										Contamination by touching food
+									</p>
+								</div>
+							</center>
+						</section>
+						
+
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Integration of e-ManRisk Software into the Virtual Environment</h2>
+							</header>
+							<p>
+								The software developed by e-ManRisk is used to record the results of quality controls carried out in laboratories. The software is typically used on <b>tablets</b> because it's the most practical in this context. An essential part of this project was to enable the same functionality in virtual reality: having a tablet that allows users to operate the software and record the controls performed during the training.<br>
+								Unity does not provide an integrated web browser within the 3D environment, and there are no free tools for this purpose. Developing such a tool would have been a substantial task, so an alternative solution was required to access the e-ManRisk application. The solution was to use the Puppeteer library.
+							</p>
+							<h3>The Puppeteer Library</h3>
+							<p>
+								The Puppeteer library enables interaction with a Chrome web browser via a Node server, similar to manual interaction on a regular computer but automated. It can simulate mouse clicks, keyboard keypresses, extract PDFs, or capture screenshots of web pages.<br>
+								This is how we will navigate the e-ManRisk web application: a screenshot of the current page will be taken and displayed on the table within the virtual environment. Users should be able to click on the website, and the displayed page should change or elements should appear. We also want text fields to be fillable, so a <b>virtual keyboard</b> will need to be modeled for the tablet.
+							</p>
+							<h3>The Tablet in the 3D Environment</h3>
+							<p>
+								For precise interaction with the tablet, there will be two tablets in the virtual world. The first one will be placed in the laboratory at <b>real size</b>, which the user will pick up to transfer it in front of a larger interactive tablet. This larger tablet will be operated using a <b>pointer</b>, and if necessary, a keyboard will be displayed on it.
+							</p>
+							<ul class="features">
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/eManRisk/tabletteLabo.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="legende">
+										Tablet in the laboratory
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/eManRisk/tabletteInterractive.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="legende">
+										Interactive tablet with a pointer
+									</p>
+								</li>
+								<li>
+									<div class="frame">
+										<img class="imgFrame" src="images/eManRisk/tabletteClavier.png" style="cursor:pointer" onclick="onClick(this)"></img>
+									</div>
+									<p class="legende">
+										Display of the keyboard
+									</p>
+								</li>
+							</ul>
+							<center>
+								<div style="max-width: 600px">
+									<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/SLaZbenbcuM" frameborder="0">
+									</div>
+									<p class="legende">
+										Transfer between tablets
+									</p>
+								</div>
+								<div style="max-width: 600px">
+									<div class='embed-container'>
+										<embed id="player" src="https://www.youtube.com/embed/l4dAgofKtuk" frameborder="0">
+									</div>
+									<p class="legende">
+										Completing a form
+									</p>
+								</div>
+							</center>
+						</section>
+						
+						<hr />
+
+						<section id="content" class="main">
+							<header class="major">
+								<h2>Tools and Languages Used</h2>
+							</header>
+							<ul class="logo">
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/unity.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/c_sharp.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/steamVR.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/modelio.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/postman.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/ts.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/git.png"></img>
+									</div>
+								</li>
+								<li>
+									<div class = "frame">
+										<img class = "imgFrame" src="images/Icone/vscode.png"></img>
+									</div>
+								</li>
+
 							</ul>
 						</section>
-						<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
 
-			</div>
-			<div id="modal01" class="modal" onclick="this.style.display='none'">
-				<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				<div class="modal-content">
-					<img id="img01" style="max-width:100%">
-				</div>
-			</div>
+					</div>
+				</article>
+			
+			</div> <!-- Main -->
+		
+		<!-- Footer -->
+		<section class="wrapper style4">
+			<h2 style="text-align: center">Contact Me</h2>
+			<dl>
+				<dt>Address:</dt>
+				<dd>393 East Price Street &bull; Chicoutimi, G7H 2G2 &bull; Canada</dd>
+				<dt>Phone:</dt>
+				<dd>(+33) 7 50 26 55 65</dd>
+				<dt>Email :</dt>
+				<dd><a href="mailto:lacombe.a67@gmail.com" target="_blank">lacombe.a67@gmail.com</a></dd>
+			</dl>
+			<ul class="social_footer">
+				<li><a href="https://www.linkedin.com/in/lacombe-alexia/"  target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://lacombea.itch.io/"  target="_blank" class="icon brands fa-itch-io"><span class="label">ItchIo</span></a></li>
+			</ul>
+			<hr />
+			<p class="copyright">&copy; LACOMBE Alexia. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div> <!-- Wrapper -->
 
-	</body>
+	<div id="modal01" class="modal" onclick="this.style.display='none'">
+		<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<div class="modal-content">
+			<img id="img01" style="max-width:100%">
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
